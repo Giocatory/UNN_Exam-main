@@ -7015,11 +7015,12 @@ from os import listdir</code></pre>
 
   <!-- 10 -->
   <details class="details">
-    <summary class="details__title">Самостоятельно написанные модули. Функция open(). Контекстный менеджер with.</summary>
+    <summary class="details__title">Самостоятельно написанные модули. Функция open(). Контекстный менеджер with.
+    </summary>
     <div class="details__content">
       <h3>1. Самостоятельные модули</h3>
       <p>Модуль — файл с расширением <code>.py</code>, содержащий функции, классы и переменные.</p>
-      
+
       <h4>Создание и использование</h4>
       <pre><code># mymodule.py
 def greet(name):
@@ -7040,14 +7041,29 @@ print(mymodule.greet("Alice"))  # Hello, Alice!</code></pre>
 
       <h3>2. Функция <code>open()</code></h3>
       <p>Работа с файлами: чтение, запись, добавление.</p>
-      
+
       <h4>Режимы доступа</h4>
       <table>
-        <tr><th>Режим</th><th>Описание</th></tr>
-        <tr><td><code>'r'</code></td><td>Чтение (по умолчанию)</td></tr>
-        <tr><td><code>'w'</code></td><td>Перезапись (удаляет старые данные)</td></tr>
-        <tr><td><code>'a'</code></td><td>Добавление в конец</td></tr>
-        <tr><td><code>'b'</code></td><td>Бинарный режим (например: <code>'rb'</code>)</td></tr>
+        <tr>
+          <th>Режим</th>
+          <th>Описание</th>
+        </tr>
+        <tr>
+          <td><code>'r'</code></td>
+          <td>Чтение (по умолчанию)</td>
+        </tr>
+        <tr>
+          <td><code>'w'</code></td>
+          <td>Перезапись (удаляет старые данные)</td>
+        </tr>
+        <tr>
+          <td><code>'a'</code></td>
+          <td>Добавление в конец</td>
+        </tr>
+        <tr>
+          <td><code>'b'</code></td>
+          <td>Бинарный режим (например: <code>'rb'</code>)</td>
+        </tr>
       </table>
 
       <h4>Примеры</h4>
@@ -7062,10 +7078,13 @@ with open('output.txt', 'w') as f:
 
       <h3>3. Контекстный менеджер <code>with</code></h3>
       <p>Автоматическое управление ресурсами (закрытие файла, даже при ошибках).</p>
-      
+
       <h4>Сравнение подходов</h4>
       <table>
-        <tr><th>Без <code>with</code></th><th>С <code>with</code></th></tr>
+        <tr>
+          <th>Без <code>with</code></th>
+          <th>С <code>with</code></th>
+        </tr>
         <tr>
           <td>
             <pre><code>f = open('file.txt')
@@ -7102,7 +7121,8 @@ except FileNotFoundError:
     <summary class="details__title">Библиотека Pandas. Базовые методы.</summary>
     <div class="details__content">
       <h3>Библиотека Pandas</h3>
-      <p>Библиотека для анализа и обработки данных. Основные структуры: <code>DataFrame</code> (таблицы) и <code>Series</code> (одномерные массивы).</p>
+      <p>Библиотека для анализа и обработки данных. Основные структуры: <code>DataFrame</code> (таблицы) и
+        <code>Series</code> (одномерные массивы).</p>
 
       <h4>1. Создание DataFrame</h4>
       <pre><code>import pandas as pd
@@ -7113,10 +7133,26 @@ df = pd.DataFrame(data)</code></pre>
 
       <h4>2. Загрузка данных</h4>
       <table>
-        <tr><th>Метод</th><th>Описание</th><th>Пример</th></tr>
-        <tr><td><code>read_csv()</code></td><td>Загрузка CSV</td><td><code>pd.read_csv('data.csv')</code></td></tr>
-        <tr><td><code>read_excel()</code></td><td>Загрузка Excel</td><td><code>pd.read_excel('data.xlsx')</code></td></tr>
-        <tr><td><code>read_json()</code></td><td>Загрузка JSON</td><td><code>pd.read_json('data.json')</code></td></tr>
+        <tr>
+          <th>Метод</th>
+          <th>Описание</th>
+          <th>Пример</th>
+        </tr>
+        <tr>
+          <td><code>read_csv()</code></td>
+          <td>Загрузка CSV</td>
+          <td><code>pd.read_csv('data.csv')</code></td>
+        </tr>
+        <tr>
+          <td><code>read_excel()</code></td>
+          <td>Загрузка Excel</td>
+          <td><code>pd.read_excel('data.xlsx')</code></td>
+        </tr>
+        <tr>
+          <td><code>read_json()</code></td>
+          <td>Загрузка JSON</td>
+          <td><code>pd.read_json('data.json')</code></td>
+        </tr>
       </table>
 
       <h4>3. Основные методы</h4>
@@ -7150,10 +7186,22 @@ df.agg({'Цена': ['mean', 'max']})</code></pre>
 
       <h4>5. Обработка пропусков</h4>
       <table>
-        <tr><th>Метод</th><th>Действие</th></tr>
-        <tr><td><code>dropna()</code></td><td>Удаление строк с NaN</td></tr>
-        <tr><td><code>fillna(value)</code></td><td>Замена NaN значением</td></tr>
-        <tr><td><code>isna()</code></td><td>Поиск пропусков</td></tr>
+        <tr>
+          <th>Метод</th>
+          <th>Действие</th>
+        </tr>
+        <tr>
+          <td><code>dropna()</code></td>
+          <td>Удаление строк с NaN</td>
+        </tr>
+        <tr>
+          <td><code>fillna(value)</code></td>
+          <td>Замена NaN значением</td>
+        </tr>
+        <tr>
+          <td><code>isna()</code></td>
+          <td>Поиск пропусков</td>
+        </tr>
       </table>
 
       <h4>6. Пример анализа данных</h4>
@@ -7183,11 +7231,16 @@ avg_price = df.groupby('Категория')['Цена'].mean()</code></pre>
     <summary class="details__title">Роли в ChatGPT, их влияние на результат.</summary>
     <div class="details__content">
       <h3>Роли в ChatGPT и их влияние на ответы</h3>
-      <p>ChatGPT использует роли для управления контекстом диалога. Основные роли: <code>system</code>, <code>user</code>, <code>assistant</code>.</p>
+      <p>ChatGPT использует роли для управления контекстом диалога. Основные роли: <code>system</code>,
+        <code>user</code>, <code>assistant</code>.</p>
 
       <h4>1. Типы ролей</h4>
       <table>
-        <tr><th>Роль</th><th>Назначение</th><th>Пример</th></tr>
+        <tr>
+          <th>Роль</th>
+          <th>Назначение</th>
+          <th>Пример</th>
+        </tr>
         <tr>
           <td><code>system</code></td>
           <td>Задает поведение модели (контекст, тон, стиль)</td>
@@ -7254,78 +7307,102 @@ System: "Ты senior Python-разработчик"
     </div>
   </details>
 
-<!-- 2 -->
-<details class="details">
-  <summary class="details__title">Модели ChatGPT. Отличия моделей.</summary>
-  <div class="details__content">
-    <h3>Модели ChatGPT и их ключевые отличия</h3>
-    <p>Разные версии GPT оптимизированы для различных задач. Основные модели:</p>
+  <!-- 2 -->
+  <details class="details">
+    <summary class="details__title">Модели ChatGPT. Отличия моделей.</summary>
+    <div class="details__content">
+      <h3>Модели ChatGPT и их ключевые отличия</h3>
+      <p>Разные версии GPT оптимизированы для различных задач. Основные модели:</p>
 
-    <h4>1. Основные модели</h4>
-    <table>
-      <tr><th>Модель</th><th>Особенности</th><th>Использование</th></tr>
-      <tr>
-        <td><strong>GPT-3.5</strong></td>
-        <td>
-          <ul>
-            <li>Быстрая генерация текста</li>
-            <li>Бесплатная версия ChatGPT</li>
-            <li>Обучена на данных до 2021</li>
-          </ul>
-        </td>
-        <td>Общие запросы, чат, простой код</td>
-      </tr>
-      <tr>
-        <td><strong>GPT-4</strong></td>
-        <td>
-          <ul>
-            <li>Выше точность и креативность</li>
-            <li>Поддержка мультимодальности*</li>
-            <li>Доступ через ChatGPT Plus</li>
-            <li>Медленнее, дороже в API</li>
-          </ul>
-        </td>
-        <td>Сложные задачи, анализ данных, продвинутый код</td>
-      </tr>
-      <tr>
-        <td><strong>GPT-4o</strong></td>
-        <td>
-          <ul>
-            <li>Оптимизированная версия GPT-4</li>
-            <li>Быстрее и дешевле</li>
-            <li>Лучшее понимание контекста</li>
-          </ul>
-        </td>
-        <td>Реальные диалоги, обработка длинных текстов</td>
-      </tr>
-    </table>
-    <p><small>*В некоторых версиях: анализ изображений, файлов</small></p>
+      <h4>1. Основные модели</h4>
+      <table>
+        <tr>
+          <th>Модель</th>
+          <th>Особенности</th>
+          <th>Использование</th>
+        </tr>
+        <tr>
+          <td><strong>GPT-3.5</strong></td>
+          <td>
+            <ul>
+              <li>Быстрая генерация текста</li>
+              <li>Бесплатная версия ChatGPT</li>
+              <li>Обучена на данных до 2021</li>
+            </ul>
+          </td>
+          <td>Общие запросы, чат, простой код</td>
+        </tr>
+        <tr>
+          <td><strong>GPT-4</strong></td>
+          <td>
+            <ul>
+              <li>Выше точность и креативность</li>
+              <li>Поддержка мультимодальности*</li>
+              <li>Доступ через ChatGPT Plus</li>
+              <li>Медленнее, дороже в API</li>
+            </ul>
+          </td>
+          <td>Сложные задачи, анализ данных, продвинутый код</td>
+        </tr>
+        <tr>
+          <td><strong>GPT-4o</strong></td>
+          <td>
+            <ul>
+              <li>Оптимизированная версия GPT-4</li>
+              <li>Быстрее и дешевле</li>
+              <li>Лучшее понимание контекста</li>
+            </ul>
+          </td>
+          <td>Реальные диалоги, обработка длинных текстов</td>
+        </tr>
+      </table>
+      <p><small>*В некоторых версиях: анализ изображений, файлов</small></p>
 
-    <h4>2. Специализированные версии</h4>
-    <ul>
-      <li><strong>Code Interpreter</strong> — выполнение кода, работа с файлами (CSV, PDF)</li>
-      <li><strong>Web Browsing</strong> — доступ к актуальным данным через интернет</li>
-      <li><strong>DALL-E</strong> — генерация изображений по тексту (отдельная модель)</li>
-    </ul>
+      <h4>2. Специализированные версии</h4>
+      <ul>
+        <li><strong>Code Interpreter</strong> — выполнение кода, работа с файлами (CSV, PDF)</li>
+        <li><strong>Web Browsing</strong> — доступ к актуальным данным через интернет</li>
+        <li><strong>DALL-E</strong> — генерация изображений по тексту (отдельная модель)</li>
+      </ul>
 
-    <h4>3. Сравнение возможностей</h4>
-    <table>
-      <tr><th>Характеристика</th><th>GPT-3.5</th><th>GPT-4</th></tr>
-      <tr><td>Длина контекста</td><td>~4k токенов</td><td>~8k-128k токенов</td></tr>
-      <tr><td>Стоимость API</td><td>$0.002 / 1k токенов</td><td>$0.03-0.12 / 1k токенов</td></tr>
-      <tr><td>Скорость ответа</td><td>Быстро</td><td>Медленнее</td></tr>
-      <tr><td>Точность фактов</td><td>Средняя</td><td>Выше</td></tr>
-    </table>
+      <h4>3. Сравнение возможностей</h4>
+      <table>
+        <tr>
+          <th>Характеристика</th>
+          <th>GPT-3.5</th>
+          <th>GPT-4</th>
+        </tr>
+        <tr>
+          <td>Длина контекста</td>
+          <td>~4k токенов</td>
+          <td>~8k-128k токенов</td>
+        </tr>
+        <tr>
+          <td>Стоимость API</td>
+          <td>$0.002 / 1k токенов</td>
+          <td>$0.03-0.12 / 1k токенов</td>
+        </tr>
+        <tr>
+          <td>Скорость ответа</td>
+          <td>Быстро</td>
+          <td>Медленнее</td>
+        </tr>
+        <tr>
+          <td>Точность фактов</td>
+          <td>Средняя</td>
+          <td>Выше</td>
+        </tr>
+      </table>
 
-    <h4>4. Как выбрать модель?</h4>
-    <ul>
-      <li><strong>GPT-3.5</strong>: Чаты, генерация текста, простые задачи</li>
-      <li><strong>GPT-4</strong>: Анализ данных, сложные инструкции, программирование</li>
-      <li><strong>Спецверсии</strong>: Работа с файлами, актуальные данные, изображения</li>
-    </ul>
+      <h4>4. Как выбрать модель?</h4>
+      <ul>
+        <li><strong>GPT-3.5</strong>: Чаты, генерация текста, простые задачи</li>
+        <li><strong>GPT-4</strong>: Анализ данных, сложные инструкции, программирование</li>
+        <li><strong>Спецверсии</strong>: Работа с файлами, актуальные данные, изображения</li>
+      </ul>
 
-    <h4>5. Примеры промптов для разных моделей</h4>
-    <pre><code># Для GPT-4 (анализ данных)
+      <h4>5. Примеры промптов для разных моделей</h4>
+      <pre><code># Для GPT-4 (анализ данных)
 "Проанализируй CSV-файл с продажами. Найди 3 ключевые тенденции. Ответ оформь как markdown-отчёт."
 
 # Для Code Interpreter
@@ -7333,8 +7410,8 @@ System: "Ты senior Python-разработчик"
 
 # Для Web Browsing
 "Какие последние новости о SpaceX? Источники: только официальный сайт и NASA."</code></pre>
-  </div>
-</details>
+    </div>
+  </details>
 
   <!-- 3 -->
   <details class="details">
