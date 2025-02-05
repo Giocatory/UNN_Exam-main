@@ -4956,7 +4956,52 @@
   <details class="details">
     <summary class="details__title">Логические условия и условный оператор</summary>
     <div class="details__content">
-      <p>...</p>
+      <h3>Логические условия и условный оператор в Python</h3>
+      <p>Используются для принятия решений в программе на основе условий.</p>
+
+      <h4>1. Логические операторы</h4>
+      <ul>
+        <li><code>==</code> — равно</li>
+        <li><code>!=</code> — не равно</li>
+        <li><code>&gt;</code> — больше</li>
+        <li><code>&lt;</code> — меньше</li>
+        <li><code>&gt;=</code> — больше или равно</li>
+        <li><code>&lt;=</code> — меньше или равно</li>
+        <li><code>and</code> — логическое И</li>
+        <li><code>or</code> — логическое ИЛИ</li>
+        <li><code>not</code> — логическое НЕТ</li>
+      </ul>
+
+      <h4>2. Условный оператор <code>if-elif-else</code></h4>
+      <pre><code>if условие1:
+    # блок кода, если условие1 True
+elif условие2:
+    # блок кода, если условие2 True
+else:
+    # блок кода, если все условия False</code></pre>
+
+      <h4>Примеры</h4>
+      <pre><code>age = 18
+if age &lt; 18:
+    print("Доступ запрещен")
+elif age == 18:
+    print("Поздравляем с совершеннолетием!")
+else:
+    print("Доступ разрешен")</code></pre>
+
+      <pre><code># Проверка нескольких условий
+x = 10
+if x &gt; 5 and x &lt; 20:
+    print("Число в диапазоне 5-20")</code></pre>
+
+      <h4>Особенности</h4>
+      <ul>
+        <li>Отступы (обычно 4 пробела) определяют блоки кода</li>
+        <li>Можно использовать вложенные условия</li>
+        <li><code>elif</code> и <code>else</code> не обязательны</li>
+        <li>Любое значение можно проверить на истинность: 
+          <code>0</code>, <code>""</code>, <code>None</code>, <code>[]</code> → <code>False</code></li>
+      </ul>
     </div>
   </details>
 
