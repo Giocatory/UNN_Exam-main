@@ -51,10 +51,10 @@
       <p><br><b>Функция type()</b> используется для определения типа объекта. Также type() может быть использована для
         создания новых типов (классов) динамически. Пример:</p>
       <code>
-        &nbsp;&nbsp;&nbsp;&nbsp;MyClass = type('MyClass', (object,), {'attr': 42})<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;obj = MyClass()<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;print(obj.attr)  # 42<br>
-      </code>
+            &nbsp;&nbsp;&nbsp;&nbsp;MyClass = type('MyClass', (object,), {'attr': 42})<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;obj = MyClass()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print(obj.attr)  # 42<br>
+          </code>
 
       <p><br><b>Приведение типов (или преобразование типов)</b> — это процесс преобразования значения из одного типа
         данных в другой. Python предоставляет несколько встроенных функций для приведения типов
@@ -223,17 +223,17 @@
           строки, множества или словаря).<br>
           Основной синтаксис:<br>
           <code>
-            &nbsp;&nbsp;&nbsp;&nbsp;<b>for</b> элемент <b>in</b> последовательность:<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;блок_кода
-          </code>
+                &nbsp;&nbsp;&nbsp;&nbsp;<b>for</b> элемент <b>in</b> последовательность:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;блок_кода
+              </code>
         </li>
         <li>
           <b>Цикл while</b> - Цикл while выполняет блок кода до тех пор, пока условие истинно.<br>
           Основной синтаксис:<br>
           <code>
-            &nbsp;&nbsp;&nbsp;&nbsp;<b>while</b> условие:<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;блок_кода
-          </code>
+                &nbsp;&nbsp;&nbsp;&nbsp;<b>while</b> условие:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;блок_кода
+              </code>
         </li>
         <li><b>Операторы итераций циклов</b><br>
           <b>break</b> - Ключевое слово, которое прерывает выполнение текущего цикла. После использования break,
@@ -590,54 +590,54 @@
           <b>Случайные числа из равномерного распределения -</b> Функция rand генерирует случайные числа с равномерным
           распределением в диапазоне от 0 до 1.<br>
           <code>
-            &nbsp;&nbsp;&nbsp;&nbsp;random_numbers = np.random.rand(5)<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;print(random_numbers)  <b># Пример вывода: [0.69354293 0.82465574 0.54501156 0.43842065 0.82866434]</b>
-          </code><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;random_numbers = np.random.rand(5)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(random_numbers)  <b># Пример вывода: [0.69354293 0.82465574 0.54501156 0.43842065 0.82866434]</b>
+              </code><br>
         </li>
         <li>
           Можно создавать массивы любой размерности, передавая нужные размеры в качестве аргументов: <br>
           <code>
-            &nbsp;&nbsp;&nbsp;&nbsp;random_matrix = np.random.rand(2, 3)<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;print(random_matrix)<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;<b># Пример вывода:</b><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;<b># [[0.27937511 0.71589188 0.79248445]</b><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;<b>#  [0.48757711 0.92242775 0.68666152]]</b>
-          </code><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;random_matrix = np.random.rand(2, 3)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(random_matrix)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<b># Пример вывода:</b><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<b># [[0.27937511 0.71589188 0.79248445]</b><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<b>#  [0.48757711 0.92242775 0.68666152]]</b>
+              </code><br>
         </li>
         <li>
           <b>Случайные целые числа -</b> Функция randint генерирует случайные целые числа в заданном диапазоне. <br>
           <code>
-            &nbsp;&nbsp;&nbsp;&nbsp;random_integers = np.random.randint(1, 10, size=5) <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;print(random_integers)  <b># Пример вывода: [3 6 9 2 7]</b>
-          </code>
+                &nbsp;&nbsp;&nbsp;&nbsp;random_integers = np.random.randint(1, 10, size=5) <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(random_integers)  <b># Пример вывода: [3 6 9 2 7]</b>
+              </code>
           <br>
           <p>Размерность массива случайных целых чисел можно задать с помощью параметра size.</p>
           <code>
-            &nbsp;&nbsp;&nbsp;&nbsp;random_integer_matrix = np.random.randint(1, 100, size=(2, 3)) <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;print(random_integer_matrix) <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;<b># Пример вывода:</b> <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;<b># [[54 29 95]</b> <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;<b>#  [70 12  5]]</b>
-          </code>
+                &nbsp;&nbsp;&nbsp;&nbsp;random_integer_matrix = np.random.randint(1, 100, size=(2, 3)) <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(random_integer_matrix) <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<b># Пример вывода:</b> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<b># [[54 29 95]</b> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<b>#  [70 12  5]]</b>
+              </code>
         </li>
         <li>
           <p><b>Случайные числа с заданным распределением -</b> Функция uniform генерирует случайные числа с равномерным
             распределением в заданном диапазоне.</p>
           <code>
-            &nbsp;&nbsp;&nbsp;&nbsp;random_uniform_numbers = np.random.uniform(low=1.0, high=5.0, size=5) <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;print(random_uniform_numbers)  <b># Пример вывода: [2.3196554  1.24903198 4.49587546 3.77022684 4.02202499]</b>
-          </code>
+                &nbsp;&nbsp;&nbsp;&nbsp;random_uniform_numbers = np.random.uniform(low=1.0, high=5.0, size=5) <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(random_uniform_numbers)  <b># Пример вывода: [2.3196554  1.24903198 4.49587546 3.77022684 4.02202499]</b>
+              </code>
         </li>
         <li>
           <p><b>Выборка случайных элементов -</b> метод choice достает из нашей последовательности случайное значение
           </p>
           <code>
-            &nbsp;&nbsp;&nbsp;&nbsp;lst = ['красный', "зеленый", "синий"] <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;print('random:', random.choice(lst)) <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;print('numpy:', np.random.choice(lst, size=2, replace=False, <span style="color: rebeccapurple;">p=[0.25, 0.05, 0.7]</span>)) <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;<b># random: синий</b> <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;<b># numpy: ['синий' 'красный']</b>
-          </code>
+                &nbsp;&nbsp;&nbsp;&nbsp;lst = ['красный', "зеленый", "синий"] <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print('random:', random.choice(lst)) <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print('numpy:', np.random.choice(lst, size=2, replace=False, <span style="color: rebeccapurple;">p=[0.25, 0.05, 0.7]</span>)) <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<b># random: синий</b> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<b># numpy: ['синий' 'красный']</b>
+              </code>
         </li>
       </ol>
     </div>
@@ -660,31 +660,31 @@
           <p><b>Метод .plot()</b> - используется для создания линейных графиков. Он может отображать одномерные массивы
             данных и их зависимости друг от друга.</p><br>
           <code>
-            &nbsp;&nbsp;&nbsp;&nbsp;import matplotlib.pyplot as plt <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;import numpy as np <br><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;<b># Создание данных</b><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;x = np.linspace(0, 10, 100)<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;y = np.sin(x) <br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;import matplotlib.pyplot as plt <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;import numpy as np <br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<b># Создание данных</b><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;x = np.linspace(0, 10, 100)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;y = np.sin(x) <br><br>
 
-            &nbsp;&nbsp;&nbsp;&nbsp;<b># Построение графика</b><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;plt.plot(x, y)<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;plt.title('Simple Line Plot')<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;plt.xlabel('x')<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;plt.ylabel('sin(x)')<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;plt.show()
-          </code>
+                &nbsp;&nbsp;&nbsp;&nbsp;<b># Построение графика</b><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;plt.plot(x, y)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;plt.title('Simple Line Plot')<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;plt.xlabel('x')<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;plt.ylabel('sin(x)')<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;plt.show()
+              </code>
           <br><br>
           <p><b>Метод .plot() поддерживает множество параметров для настройки внешнего вида графика.</b></p><br>
           <code>
-            &nbsp;&nbsp;&nbsp;&nbsp;<b># Построение графика с настройками</b> <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;plt.plot(x, y, label='sin(x)', color='blue', linestyle='--', linewidth=2, marker='o') <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;plt.title('Styled Line Plot') <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;plt.xlabel('x') <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;plt.ylabel('sin(x)') <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;plt.legend() <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;plt.grid(True) <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;plt.show()
-          </code>
+                &nbsp;&nbsp;&nbsp;&nbsp;<b># Построение графика с настройками</b> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;plt.plot(x, y, label='sin(x)', color='blue', linestyle='--', linewidth=2, marker='o') <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;plt.title('Styled Line Plot') <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;plt.xlabel('x') <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;plt.ylabel('sin(x)') <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;plt.legend() <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;plt.grid(True) <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;plt.show()
+              </code>
           <br><br>
         </li>
         <li>
@@ -692,17 +692,17 @@
             данные в виде прямоугольников, где длина каждого прямоугольника пропорциональна значению.</p>
           <br>
           <code>
-            &nbsp;&nbsp;&nbsp;&nbsp;<b># Создание данных</b><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;categories = ['A', 'B', 'C', 'D']<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;values = [3, 7, 5, 9]<br>
-            <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;<b># Построение столбчатой диаграммы</b><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;plt.bar(categories, values)<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;plt.title('Simple Bar Plot')<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;plt.xlabel('Categories')<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;plt.ylabel('Values')<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;plt.show()
-          </code>
+                &nbsp;&nbsp;&nbsp;&nbsp;<b># Создание данных</b><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;categories = ['A', 'B', 'C', 'D']<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;values = [3, 7, 5, 9]<br>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<b># Построение столбчатой диаграммы</b><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;plt.bar(categories, values)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;plt.title('Simple Bar Plot')<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;plt.xlabel('Categories')<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;plt.ylabel('Values')<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;plt.show()
+              </code>
           <br><br>
           <p><b>Сгруппированные и сложенные столбчатые диаграммы</b> - Для создания более сложных столбчатых диаграмм,
             таких как сгруппированные и сложенные, используются дополнительные настройки.</p>
@@ -710,34 +710,34 @@
             <li>
               Сгруппированная столбчатая диаграмма<br><br>
               <code>
-                &nbsp;&nbsp;&nbsp;&nbsp;<b># Создание данных</b><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;bar_width = 0.35 <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;index = np.arange(len(categories)) <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;values2 = [2, 6, 4, 8] <br>
-                <br>              
-                &nbsp;&nbsp;&nbsp;&nbsp;<b># Построение сгруппированной столбчатой диаграммы </b><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;plt.bar(index, values, bar_width, label='Group 1', color='b') <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;plt.bar(index + bar_width, values2, bar_width, label='Group 2', color='r') <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;plt.xlabel('Categories') <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;plt.ylabel('Values') <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;plt.title('Grouped Bar Plot') <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;plt.xticks(index + bar_width / 2, categories) <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;plt.legend() <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;plt.show()
-              </code><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<b># Создание данных</b><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;bar_width = 0.35 <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;index = np.arange(len(categories)) <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;values2 = [2, 6, 4, 8] <br>
+                    <br>              
+                    &nbsp;&nbsp;&nbsp;&nbsp;<b># Построение сгруппированной столбчатой диаграммы </b><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;plt.bar(index, values, bar_width, label='Group 1', color='b') <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;plt.bar(index + bar_width, values2, bar_width, label='Group 2', color='r') <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;plt.xlabel('Categories') <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;plt.ylabel('Values') <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;plt.title('Grouped Bar Plot') <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;plt.xticks(index + bar_width / 2, categories) <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;plt.legend() <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;plt.show()
+                  </code><br><br>
             </li>
             <li>
               Сложенная столбчатая диаграмма <br><br>
               <code>
-                &nbsp;&nbsp;&nbsp;&nbsp;<b># Построение сложенной столбчатой диаграммы</b><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;plt.bar(categories, values, label='Group 1', color='b') <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;plt.bar(categories, values2, bottom=values, label='Group 2', color='r') <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;plt.xlabel('Categories') <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;plt.ylabel('Values') <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;plt.title('Stacked Bar Plot') <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;plt.legend() <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;plt.show()
-              </code>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<b># Построение сложенной столбчатой диаграммы</b><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;plt.bar(categories, values, label='Group 1', color='b') <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;plt.bar(categories, values2, bottom=values, label='Group 2', color='r') <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;plt.xlabel('Categories') <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;plt.ylabel('Values') <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;plt.title('Stacked Bar Plot') <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;plt.legend() <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;plt.show()
+                  </code>
             </li>
           </ol><br><br>
         </li>
@@ -890,8 +890,8 @@
         может быть использован для чтения, записи или других операций. Формат вызова функции open() выглядит следующим
         образом:</p>
       <code>
-        open(file, mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)
-      </code>
+            open(file, mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)
+          </code>
       <br><br>
       <ul><b>Основные параметры функции open()</b>
         <li><b>file:</b> Имя файла, который необходимо открыть. Это обязательный параметр.</li>
@@ -914,10 +914,10 @@
       <br>
       <p><b>Основная структура использования контекстного менеджера with</b></p>
       <code>
-        &nbsp;&nbsp;&nbsp;&nbsp;with open('filename', 'mode') as file: <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;<b># Операции с файлом</b> <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;pass
-      </code>
+            &nbsp;&nbsp;&nbsp;&nbsp;with open('filename', 'mode') as file: <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<b># Операции с файлом</b> <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;pass
+          </code>
       <br><br>
       <ol><b>Преимущества использования контекстного менеджера with</b>
         <li><b>Автоматическое закрытие файлов:</b> Файл автоматически закрывается по завершении блока with, что
@@ -1120,42 +1120,42 @@
         <li>
           <b>Создание списка квадратов чисел</b><br>
           <code>
-            &nbsp;&nbsp;&nbsp;&nbsp;squares = [x**2 for x in range(10)] <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;print(squares) <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;# Вывод: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
-          </code>
+                &nbsp;&nbsp;&nbsp;&nbsp;squares = [x**2 for x in range(10)] <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(squares) <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;# Вывод: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+              </code>
         </li>
         <li>
           <b>Создание списка четных чисел</b><br>
           <code>
-            &nbsp;&nbsp;&nbsp;&nbsp;evens = [x for x in range(20) if x % 2 == 0] <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;print(evens) <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;# Вывод: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
-          </code>
+                &nbsp;&nbsp;&nbsp;&nbsp;evens = [x for x in range(20) if x % 2 == 0] <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(evens) <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;# Вывод: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+              </code>
         </li>
         <li>
           <b>Преобразование строки в список символов</b><br>
           <code>
-            &nbsp;&nbsp;&nbsp;&nbsp;chars = [char for char in "hello"] <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;print(chars) <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;# Вывод: ['h', 'e', 'l', 'l', 'o']
-          </code>
+                &nbsp;&nbsp;&nbsp;&nbsp;chars = [char for char in "hello"] <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(chars) <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;# Вывод: ['h', 'e', 'l', 'l', 'o']
+              </code>
         </li>
         <li>
           <b>Создание списка пар (число, его квадрат)</b><br>
           <code>
-            &nbsp;&nbsp;&nbsp;&nbsp;pairs = [(x, x**2) for x in range(10)] <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;print(pairs) <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;# Вывод: [(0, 0), (1, 1), (2, 4), (3, 9), (4, 16), (5, 25), (6, 36), (7, 49), (8, 64), (9, 81)]
-          </code>
+                &nbsp;&nbsp;&nbsp;&nbsp;pairs = [(x, x**2) for x in range(10)] <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(pairs) <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;# Вывод: [(0, 0), (1, 1), (2, 4), (3, 9), (4, 16), (5, 25), (6, 36), (7, 49), (8, 64), (9, 81)]
+              </code>
         </li>
         <li>
           <b>Использование вложенных циклов в генераторах списков</b><br>
           <code>
-            &nbsp;&nbsp;&nbsp;&nbsp;matrix = [[i * j for j in range(5)] for i in range(5)] <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;print(matrix) <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;# Вывод: [[0, 0, 0, 0, 0], [0, 1, 2, 3, 4], [0, 2, 4, 6, 8], [0, 3, 6, 9, 12], [0, 4, 8, 12, 16]]
-          </code>
+                &nbsp;&nbsp;&nbsp;&nbsp;matrix = [[i * j for j in range(5)] for i in range(5)] <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(matrix) <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;# Вывод: [[0, 0, 0, 0, 0], [0, 1, 2, 3, 4], [0, 2, 4, 6, 8], [0, 3, 6, 9, 12], [0, 4, 8, 12, 16]]
+              </code>
         </li>
       </ol>
     </div>
@@ -1197,10 +1197,10 @@
           Маршруты определяются с помощью декораторов. Декораторы указывают, какой HTTP метод используется для маршрута
           (GET, POST, PUT, DELETE и т.д.) и путь к маршруту. <br><br>
           <code>
-            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: orange">@app.get("/")</span><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;def read_root(): <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return {"Hello": "World"} <br>
-          </code><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: orange">@app.get("/")</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;def read_root(): <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return {"Hello": "World"} <br>
+              </code><br>
           <p>Этот код создает простой маршрут, который возвращает JSON-объект {"Hello": "World"} при обращении к
             корневому URL (/).</p>
         </li>
@@ -1217,12 +1217,12 @@
         <li>
           <b>Определение маршрутов с параметрами</b> <br><br>
           <code>
-            &nbsp;&nbsp;&nbsp;&nbsp;from typing import Optional <br>
-            <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;@app.get("/items/{item_id}") <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;def read_item(item_id: int, q: Optional[str] = None): <br>
-               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return {"item_id": item_id, "q": q}
-          </code>
+                &nbsp;&nbsp;&nbsp;&nbsp;from typing import Optional <br>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;@app.get("/items/{item_id}") <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;def read_item(item_id: int, q: Optional[str] = None): <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return {"item_id": item_id, "q": q}
+              </code>
           <br><br>
           <p>Этот маршрут принимает путь параметра item_id и необязательный параметр запроса q.</p><br>
         </li>
@@ -1230,18 +1230,18 @@
           <b>Обработка POST-запросов с телом запроса</b> (Для обработки данных в теле запроса мы используем Pydantic
           модели.) <br><br>
           <code>
-            &nbsp;&nbsp;&nbsp;&nbsp;from pydantic import BaseModel <br>
-            <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;class Item(BaseModel): <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: str <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description: Optional[str] = None <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;price: float <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tax: Optional[float] = None <br>
-            <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;@app.post("/items/") <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;def create_item(item: Item): <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return item
-          </code>
+                &nbsp;&nbsp;&nbsp;&nbsp;from pydantic import BaseModel <br>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;class Item(BaseModel): <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: str <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description: Optional[str] = None <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;price: float <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tax: Optional[float] = None <br>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;@app.post("/items/") <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;def create_item(item: Item): <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return item
+              </code>
           <br><br>
           <p>Здесь мы определяем Pydantic модель Item и используем её в маршруте для обработки POST-запроса.</p><br>
         </li>
@@ -1252,24 +1252,24 @@
           <b>Параметры пути и запроса</b> - FastAPI автоматически парсит параметры пути и запросов и проверяет их типы.
           <br><br>
           <code>
-            &nbsp;&nbsp;&nbsp;&nbsp;@app.get("/users/{user_id}") <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;def read_user(user_id: int, name: Optional[str] = None): <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return {"user_id": user_id, "name": name}
-          </code><br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;@app.get("/users/{user_id}") <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;def read_user(user_id: int, name: Optional[str] = None): <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return {"user_id": user_id, "name": name}
+              </code><br><br>
         </li>
         <li>
           <b>Валидация и обработка данных</b> - Использование Pydantic моделей обеспечивает валидацию данных и
           автоматическую документацию<br><br>
           <code>
-            &nbsp;&nbsp;&nbsp;&nbsp;class User(BaseModel): <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;username: str <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;email: str <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;age: Optional[int] = None <br>
-            <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;@app.post("/users/") <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;def create_user(user: User): <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return user
-          </code>
+                &nbsp;&nbsp;&nbsp;&nbsp;class User(BaseModel): <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;username: str <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;email: str <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;age: Optional[int] = None <br>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;@app.post("/users/") <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;def create_user(user: User): <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return user
+              </code>
         </li>
       </ol>
       <br>
@@ -1282,13 +1282,13 @@
       </p>
       <br>
       <code>
-        &nbsp;&nbsp;&nbsp;&nbsp;import asyncio <br>
-        <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;@app.get("/async") <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;async def get_async(): <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;await asyncio.sleep(1) <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return {"message": "Hello, async world!"}
-      </code><br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;import asyncio <br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;@app.get("/async") <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;async def get_async(): <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;await asyncio.sleep(1) <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return {"message": "Hello, async world!"}
+          </code><br><br>
       <p>FastAPI — мощный инструмент для создания API с Python, который обеспечивает высокую производительность и
         удобство использования. Он предлагает множество возможностей для работы с запросами, ответами, асинхронным
         программированием, а также предоставляет автоматическую документацию и валидацию данных с помощью Pydantic.
@@ -1469,13 +1469,13 @@
         <li>
           В Keras также можно определять собственные функции потерь. Например: <br>
           <code>
-            &nbsp;&nbsp;&nbsp;&nbsp;import tensorflow as tf <br>
-            <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;def custom_loss(y_true, y_pred): <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return tf.reduce_mean(tf.square(y_true - y_pred)) <br>
-            <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;model.compile(optimizer='adam', loss=custom_loss)
-          </code>
+                &nbsp;&nbsp;&nbsp;&nbsp;import tensorflow as tf <br>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;def custom_loss(y_true, y_pred): <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return tf.reduce_mean(tf.square(y_true - y_pred)) <br>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;model.compile(optimizer='adam', loss=custom_loss)
+              </code>
         </li>
       </ul><br>
       <p>Функции потерь играют критически важную роль в обучении моделей машинного обучения и нейронных сетей. Выбор
@@ -1865,14 +1865,14 @@
               используя разные части для обучения и валидации.</li>
             <li>
               <code>
-                &nbsp;&nbsp;&nbsp;&nbsp;from sklearn.model_selection import KFold <br>
-                <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;kf = KFold(n_splits=5) <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;for train_index, val_index in kf.split(X): <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X_train, X_val = X[train_index], X[val_index] <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y_train, y_val = y[train_index], y[val_index] <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;model.fit(X_train, y_train, validation_data=(X_val, y_val))
-              </code>
+                    &nbsp;&nbsp;&nbsp;&nbsp;from sklearn.model_selection import KFold <br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;kf = KFold(n_splits=5) <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;for train_index, val_index in kf.split(X): <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X_train, X_val = X[train_index], X[val_index] <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y_train, y_val = y[train_index], y[val_index] <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;model.fit(X_train, y_train, validation_data=(X_val, y_val))
+                  </code>
             </li>
           </ul>
         </li>
@@ -1882,10 +1882,10 @@
             <li><b>Гауссов шум (Gaussian Noise):</b> Добавление случайного шума к входным данным.</li>
             <li>
               <code>
-                &nbsp;&nbsp;&nbsp;&nbsp;from tensorflow.keras.layers import GaussianNoise <br>
-                <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;model.add(GaussianNoise(0.1))  # Добавление шума с стандартным отклонением 0.1
-              </code>
+                    &nbsp;&nbsp;&nbsp;&nbsp;from tensorflow.keras.layers import GaussianNoise <br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;model.add(GaussianNoise(0.1))  # Добавление шума с стандартным отклонением 0.1
+                  </code>
             </li>
           </ul>
         </li>
@@ -2336,17 +2336,17 @@
         <li>
           <b>Создание объекта Tokenizer с заданными параметрами.</b><br>
           <code>
-            &nbsp;&nbsp;&nbsp;&nbsp;from keras.preprocessing.text import Tokenizer <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;tokenizer = Tokenizer(num_words=10000)
-          </code>
+                &nbsp;&nbsp;&nbsp;&nbsp;from keras.preprocessing.text import Tokenizer <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;tokenizer = Tokenizer(num_words=10000)
+              </code>
         </li>
         <li>
           <b>Обучение токенизатора на текстовых данных:</b> Токенизатор анализирует текст и строит словарь частотности
           слов. <br>
           <code>
-            &nbsp;&nbsp;&nbsp;&nbsp;texts = ["Пример текста для токенизации", "Еще один пример текста"] <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;tokenizer.fit_on_texts(texts)
-          </code>
+                &nbsp;&nbsp;&nbsp;&nbsp;texts = ["Пример текста для токенизации", "Еще один пример текста"] <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;tokenizer.fit_on_texts(texts)
+              </code>
         </li>
         <li>
           <b>Преобразование текстов в последовательности чисел: </b>Текстовые данные преобразуются в последовательности
@@ -2929,9 +2929,9 @@
             <li>
               <b>Загрузка:</b><br>
               <code>
-                from tensorflow.keras.models import load_model <br><br>
-                model = load_model('path_to_my_model')
-              </code>
+                    from tensorflow.keras.models import load_model <br><br>
+                    model = load_model('path_to_my_model')
+                  </code>
             </li>
           </ul>
         </li>
@@ -2955,20 +2955,20 @@
             <li>
               <b>Сохранение:</b><br>
               <code>
-                json_config = model.to_json() <br>
-                with open('model_config.json', 'w') as json_file: <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;json_file.write(json_config)
-              </code>
+                    json_config = model.to_json() <br>
+                    with open('model_config.json', 'w') as json_file: <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;json_file.write(json_config)
+                  </code>
             </li>
             <li>
               <b>Загрузка:</b><br>
               <code>
-                from tensorflow.keras.models import model_from_json <br> <br>
-                with open('model_config.json', 'r') as json_file: <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;json_config = json_file.read() <br>
-                model = model_from_json(json_config) <br>
-                model.load_weights('path_to_my_weights')
-              </code>
+                    from tensorflow.keras.models import model_from_json <br> <br>
+                    with open('model_config.json', 'r') as json_file: <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;json_config = json_file.read() <br>
+                    model = model_from_json(json_config) <br>
+                    model.load_weights('path_to_my_weights')
+                  </code>
             </li>
           </ul>
         </li>
@@ -2983,9 +2983,9 @@
             <li>
               <b>Загрузка:</b><br>
               <code>
-                from tensorflow.keras.models import load_model <br><br>
-                model = load_model('path_to_saved_model')
-              </code>
+                    from tensorflow.keras.models import load_model <br><br>
+                    model = load_model('path_to_saved_model')
+                  </code>
             </li>
           </ul>
         </li>
@@ -3002,9 +3002,9 @@
             <li>
               <b>Загрузка:</b><br>
               <code>
-                model = torch.load('model.pth')
-                model.eval()  <b># Установка режима оценки</b>
-              </code>
+                    model = torch.load('model.pth')
+                    model.eval()  <b># Установка режима оценки</b>
+                  </code>
             </li>
           </ul>
         </li>
@@ -3020,10 +3020,10 @@
               <b>Загрузка:</b><br><i>В этом случае важно иметь определение класса модели TheModelClass при загрузке
                 весов.</i><br>
               <code>
-                model = TheModelClass(*args, **kwargs) <br>
-                model.load_state_dict(torch.load('model_weights.pth')) <br>
-                model.eval()  <b># Установка режима оценки</b>
-              </code>
+                    model = TheModelClass(*args, **kwargs) <br>
+                    model.load_state_dict(torch.load('model_weights.pth')) <br>
+                    model.eval()  <b># Установка режима оценки</b>
+                  </code>
             </li>
           </ul>
         </li>
@@ -3034,23 +3034,23 @@
             <li>
               <b>Сохранение:</b><br>
               <code>
-                torch.save({ <br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;'model_state_dict': model.state_dict(), <br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;'optimizer_state_dict': optimizer.state_dict(), <br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;'epoch': epoch, <br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;'loss': loss, <br>
-                }, 'checkpoint.pth')
-              </code>
+                    torch.save({ <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;'model_state_dict': model.state_dict(), <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;'optimizer_state_dict': optimizer.state_dict(), <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;'epoch': epoch, <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;'loss': loss, <br>
+                    }, 'checkpoint.pth')
+                  </code>
             </li>
             <li>
               <b>Загрузка:</b><br>
               <code>
-                checkpoint = torch.load('checkpoint.pth') <br>
-                model.load_state_dict(checkpoint['model_state_dict']) <br>
-                optimizer.load_state_dict(checkpoint['optimizer_state_dict']) <br>
-                epoch = checkpoint['epoch'] <br>
-                loss = checkpoint['loss']
-              </code>
+                    checkpoint = torch.load('checkpoint.pth') <br>
+                    model.load_state_dict(checkpoint['model_state_dict']) <br>
+                    optimizer.load_state_dict(checkpoint['optimizer_state_dict']) <br>
+                    epoch = checkpoint['epoch'] <br>
+                    loss = checkpoint['loss']
+                  </code>
             </li>
           </ul>
         </li>
@@ -4251,20 +4251,20 @@
             <li>
               <b>В Python с использованием библиотеки python-telegram-bot</b><br>
               <code>
-                from telegram import Update <br>
-                from telegram.ext import Updater, CommandHandler, CallbackContext <br>
-                <br>              
-                def start(update: Update, context: CallbackContext) -> None: <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;update.message.reply_text('Привет! Я ваш Телеграм-бот.') <br>
-                <br>              
-                updater = Updater('YOUR TOKEN HERE') <br>
-                <br>              
-                dispatcher = updater.dispatcher <br>
-                dispatcher.add_handler(CommandHandler("start", start)) <br>
-                <br>              
-                updater.start_polling() <br>
-                updater.idle()
-              </code>
+                    from telegram import Update <br>
+                    from telegram.ext import Updater, CommandHandler, CallbackContext <br>
+                    <br>              
+                    def start(update: Update, context: CallbackContext) -> None: <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;update.message.reply_text('Привет! Я ваш Телеграм-бот.') <br>
+                    <br>              
+                    updater = Updater('YOUR TOKEN HERE') <br>
+                    <br>              
+                    dispatcher = updater.dispatcher <br>
+                    dispatcher.add_handler(CommandHandler("start", start)) <br>
+                    <br>              
+                    updater.start_polling() <br>
+                    updater.idle()
+                  </code>
             </li>
           </ul>
         </li>
@@ -5406,53 +5406,53 @@
         следующим образом:</p>
       <br>
       <code>
-        Object_Detection_Project/ <br>
-        │ <br>
-        ├── data/ <br>
-        │   ├── train/ <br>
-        │   │   ├── images/ <br>
-        │   │   │   ├── image1.jpg <br>
-        │   │   │   ├── image2.jpg <br>
-        │   │   │   └── ... <br>
-        │   │   ├── annotations/ <br>
-        │   │   │   ├── image1.xml (или .json) <br>
-        │   │   │   ├── image2.xml <br>
-        │   │   │   └── ... <br>
-        │   ├── val/ <br>
-        │   │   ├── images/ <br>
-        │   │   └── annotations/ <br>
-        │   ├── test/ <br>
-        │   │   ├── images/ <br>
-        │   │   └── annotations/ <br>
-        │   └── labels/ <br>
-        │       └── label_map.pbtxt <br>
-        │ <br>
-        ├── models/ <br>
-        │   ├── my_model/ <br>
-        │   │   ├── pipeline.config <br>
-        │   │   ├── checkpoint/ <br>
-        │   │   └── saved_model/ <br>
-        │   └── pre-trained/ <br>
-        │       └── model_name/ <br>
-        │ <br>
-        ├── scripts/ <br>
-        │   ├── preprocess_data.py <br>
-        │   ├── train_model.py <br>
-        │   ├── evaluate_model.py <br>
-        │   └── inference.py <br>
-        │ <br>
-        ├── outputs/ <br>
-        │   ├── predictions/ <br>
-        │   │   ├── image1_prediction.jpg <br>
-        │   │   ├── image2_prediction.jpg <br>
-        │   │   └── ... <br>
-        │   ├── logs/ <br>
-        │   │   └── training.log <br>
-        │   └── metrics/ <br>
-        │       └── eval_metrics.json <br>
-        │ <br>
-        └── README.md <br>
-      </code>
+            Object_Detection_Project/ <br>
+            │ <br>
+            ├── data/ <br>
+            │   ├── train/ <br>
+            │   │   ├── images/ <br>
+            │   │   │   ├── image1.jpg <br>
+            │   │   │   ├── image2.jpg <br>
+            │   │   │   └── ... <br>
+            │   │   ├── annotations/ <br>
+            │   │   │   ├── image1.xml (или .json) <br>
+            │   │   │   ├── image2.xml <br>
+            │   │   │   └── ... <br>
+            │   ├── val/ <br>
+            │   │   ├── images/ <br>
+            │   │   └── annotations/ <br>
+            │   ├── test/ <br>
+            │   │   ├── images/ <br>
+            │   │   └── annotations/ <br>
+            │   └── labels/ <br>
+            │       └── label_map.pbtxt <br>
+            │ <br>
+            ├── models/ <br>
+            │   ├── my_model/ <br>
+            │   │   ├── pipeline.config <br>
+            │   │   ├── checkpoint/ <br>
+            │   │   └── saved_model/ <br>
+            │   └── pre-trained/ <br>
+            │       └── model_name/ <br>
+            │ <br>
+            ├── scripts/ <br>
+            │   ├── preprocess_data.py <br>
+            │   ├── train_model.py <br>
+            │   ├── evaluate_model.py <br>
+            │   └── inference.py <br>
+            │ <br>
+            ├── outputs/ <br>
+            │   ├── predictions/ <br>
+            │   │   ├── image1_prediction.jpg <br>
+            │   │   ├── image2_prediction.jpg <br>
+            │   │   └── ... <br>
+            │   ├── logs/ <br>
+            │   │   └── training.log <br>
+            │   └── metrics/ <br>
+            │       └── eval_metrics.json <br>
+            │ <br>
+            └── README.md <br>
+          </code>
       <br>
       <ol>
         <b>Детальный разбор структуры</b>
@@ -6072,10 +6072,10 @@
       </ul><br>
       <p><b>Пример</b></p>
       <code>
-        print("Hello", "World!")                <span style="color: green;"># Hello World! (с пробелом и переносом строки)</span>
-        <br>
-        print(10, 20, 30, sep='|', end='...')   <span style="color: green;"># 10|20|30... (без переноса)</span>
-      </code><br><br>
+            print("Hello", "World!")                <span style="color: green;"># Hello World! (с пробелом и переносом строки)</span>
+            <br>
+            print(10, 20, 30, sep='|', end='...')   <span style="color: green;"># 10|20|30... (без переноса)</span>
+          </code><br><br>
       <p><b>2. Функция input()</b></p><br>
       <p>Назначение: чтение ввода пользователя из консоли.</p>
       <p>Синтаксис:</p>
@@ -6085,9 +6085,9 @@
       <p>Пример:</p>
       <br>
       <code>
-        name = input("Введите ваше имя: ")      <span style="color: green;"># Ввод имени (например, "Анна")</span> <br>
-        age = int(input("Сколько вам лет? "))   <span style="color: green;"># Ввод числа с преобразованием в int</span>
-      </code><br><br>
+            name = input("Введите ваше имя: ")      <span style="color: green;"># Ввод имени (например, "Анна")</span> <br>
+            age = int(input("Сколько вам лет? "))   <span style="color: green;"># Ввод числа с преобразованием в int</span>
+          </code><br><br>
       <ul>
         <p><b>Ключевые моменты</b></p>
         <li>print() гибко настраивается через sep, end.</li>
@@ -6166,26 +6166,26 @@
 
       <p><b>Пример</b></p>
       <code>
-        a = 10 + 3 * 2   <span style="color: green;"># 16 (3*2=6, 10+6=16)</span><br>
-        b = (10 + 3) * 2 <span style="color: green;"># 26</span><br>
-        c = 13 // 2      <span style="color: green;"># 6 (целочисленное деление)</span><br>
-        d = 13 % 2       <span style="color: green;"># 1 (остаток)</span>
-      </code><br><br>
+            a = 10 + 3 * 2   <span style="color: green;"># 16 (3*2=6, 10+6=16)</span><br>
+            b = (10 + 3) * 2 <span style="color: green;"># 26</span><br>
+            c = 13 // 2      <span style="color: green;"># 6 (целочисленное деление)</span><br>
+            d = 13 % 2       <span style="color: green;"># 1 (остаток)</span>
+          </code><br><br>
 
       <p><b>2. Переменные (переменная - именнованная область памяти)</b></p>
       <code>
-        name = "Alice"  <span style="color: green;"># Тип str</span><br>
-        age = 25        <span style="color: green;"># Тип int</span><br>
-        height = 1.75   <span style="color: green;"># Тип float</span><br>
-        is_student = True  <span style="color: green;"># Тип bool</span>
-      </code>
+            name = "Alice"  <span style="color: green;"># Тип str</span><br>
+            age = 25        <span style="color: green;"># Тип int</span><br>
+            height = 1.75   <span style="color: green;"># Тип float</span><br>
+            is_student = True  <span style="color: green;"># Тип bool</span>
+          </code>
       <br><br>
 
       <p><b>Динамическая типизация - тип переменной определяется автоматически.</b></p>
       <code>
-        x = 10     <span style="color: green;"># x — int</span><br>
-        x = "текст" <span style="color: green;"># Теперь x — str</span>
-      </code>
+            x = 10     <span style="color: green;"># x — int</span><br>
+            x = "текст" <span style="color: green;"># Теперь x — str</span>
+          </code>
       <br><br>
 
 
@@ -6208,17 +6208,17 @@
         <br><br>
         <p><b>Преобразование типов</b></p>
         <code>
-        x = int("10")     <span style="color: green;"># 10 (str → int)</span><br>
-        y = float(5)      <span style="color: green;"># 5.0 (int → float)</span><br>
-        z = str(3.14)     <span style="color: green;"># "3.14" (float → str)</span><br>
-        is_valid = bool(1) <span style="color: green;"># True (0 → False, любое число ≠0 → True)</span>
-      </code><br><br>
+            x = int("10")     <span style="color: green;"># 10 (str → int)</span><br>
+            y = float(5)      <span style="color: green;"># 5.0 (int → float)</span><br>
+            z = str(3.14)     <span style="color: green;"># "3.14" (float → str)</span><br>
+            is_valid = bool(1) <span style="color: green;"># True (0 → False, любое число ≠0 → True)</span>
+          </code><br><br>
 
         <p><b>Примеры ошибок</b></p>
         <code>
-        <span style="color: green;"># print("Возраст: " + 25)  # Ошибка: нельзя складывать str и int</span><br>
-        print("Возраст: " + str(25))  <span style="color: green;"># Корректно: "Возраст: 25"</span>
-      </code><br><br>
+            <span style="color: green;"># print("Возраст: " + 25)  # Ошибка: нельзя складывать str и int</span><br>
+            print("Возраст: " + str(25))  <span style="color: green;"># Корректно: "Возраст: 25"</span>
+          </code><br><br>
 
         <p><b>Ключевые моменты</b></p>
         <ul>
@@ -6231,12 +6231,12 @@
 
         <p><b>Пример комплексного использования</b></p>
         <code>
-          a = 5<br>
-          b = 2.5<br>
-          result = a * b          <span style="color: green;"># 12.5 (float)</span><br>
-          text = str(a) + " * " + str(b) + " = " + str(result)<br>
-          print(text)             <span style="color: green;"># "5 * 2.5 = 12.5"</span>
-      </code>
+              a = 5<br>
+              b = 2.5<br>
+              result = a * b          <span style="color: green;"># 12.5 (float)</span><br>
+              text = str(a) + " * " + str(b) + " = " + str(result)<br>
+              print(text)             <span style="color: green;"># "5 * 2.5 = 12.5"</span>
+          </code>
     </div>
   </details>
 
@@ -6262,25 +6262,25 @@
 
       <h4>2. Условный оператор <code>if-elif-else</code></h4>
       <pre><code>if условие1:
-    # блок кода, если условие1 True
-elif условие2:
-    # блок кода, если условие2 True
-else:
-    # блок кода, если все условия False</code></pre>
+        # блок кода, если условие1 True
+    elif условие2:
+        # блок кода, если условие2 True
+    else:
+        # блок кода, если все условия False</code></pre>
 
       <h4>Примеры</h4>
       <pre><code>age = 18
-if age &lt; 18:
-    print("Доступ запрещен")
-elif age == 18:
-    print("Поздравляем с совершеннолетием!")
-else:
-    print("Доступ разрешен")</code></pre>
+    if age &lt; 18:
+        print("Доступ запрещен")
+    elif age == 18:
+        print("Поздравляем с совершеннолетием!")
+    else:
+        print("Доступ разрешен")</code></pre>
 
       <pre><code># Проверка нескольких условий
-x = 10
-if x &gt; 5 and x &lt; 20:
-    print("Число в диапазоне 5-20")</code></pre>
+    x = 10
+    if x &gt; 5 and x &lt; 20:
+        print("Число в диапазоне 5-20")</code></pre>
 
       <h4>Особенности</h4>
       <ul>
@@ -6306,49 +6306,49 @@ if x &gt; 5 and x &lt; 20:
         <li>Итерируется по элементам последовательности (список, строка, словарь и т.д.)</li>
         <li>Синтаксис:
           <pre><code>for элемент in последовательность:
-  # блок кода</code></pre>
+      # блок кода</code></pre>
         </li>
       </ul>
 
       <h5>Примеры</h5>
       <pre><code># Перебор списка
-fruits = ["яблоко", "банан", "вишня"]
-for fruit in fruits:
-  print(fruit)</code></pre>
+    fruits = ["яблоко", "банан", "вишня"]
+    for fruit in fruits:
+      print(fruit)</code></pre>
 
       <pre><code># Использование range()
-for i in range(3):      # 0, 1, 2
-  print(i)</code></pre>
+    for i in range(3):      # 0, 1, 2
+      print(i)</code></pre>
 
       <pre><code># Цикл с else (выполняется после завершения итераций)
-for x in []:
-  print(x)
-else:
-  print("Список пуст")</code></pre>
+    for x in []:
+      print(x)
+    else:
+      print("Список пуст")</code></pre>
 
       <h4>2. Цикл <code>while</code></h4>
       <ul>
         <li>Выполняется, пока условие истинно</li>
         <li>Синтаксис:
           <pre><code>while условие:
-  # блок кода
-else:  # необязательно
-  # выполняется, если цикл завершился без break</code></pre>
+      # блок кода
+    else:  # необязательно
+      # выполняется, если цикл завершился без break</code></pre>
         </li>
       </ul>
 
       <h5>Примеры</h5>
       <pre><code># Простой счетчик
-count = 0
-while count &lt; 3:
-  print(count)
-  count += 1</code></pre>
+    count = 0
+    while count &lt; 3:
+      print(count)
+      count += 1</code></pre>
 
       <pre><code># Прерывание цикла (break)
-while True:
-  answer = input("Введите 'выход' для завершения: ")
-  if answer.lower() == "выход":
-      break</code></pre>
+    while True:
+      answer = input("Введите 'выход' для завершения: ")
+      if answer.lower() == "выход":
+          break</code></pre>
 
       <h4>Ключевые различия</h4>
       <table border="1">
@@ -6388,7 +6388,7 @@ while True:
         <li>Элементы любых типов (даже другие списки)</li>
         <li>Создание:
           <pre><code>nums = [1, 2, 3]
-words = list(("apple", "banana"))</code></pre>
+    words = list(("apple", "banana"))</code></pre>
         </li>
         <li><strong>Основные методы</strong>:
           <table border="1">
@@ -6426,11 +6426,11 @@ words = list(("apple", "banana"))</code></pre>
         </li>
         <li><strong>Примеры операций</strong>:
           <pre><code># Срезы
-print(nums[1:3])    # [2, 3]
-print(nums[::-1])   # [3, 2, 1]
+    print(nums[1:3])    # [2, 3]
+    print(nums[::-1])   # [3, 2, 1]
 
-# Генерация списка
-squares = [x**2 for x in range(5)]  # [0, 1, 4, 9, 16]</code></pre>
+    # Генерация списка
+    squares = [x**2 for x in range(5)]  # [0, 1, 4, 9, 16]</code></pre>
         </li>
       </ul>
 
@@ -6440,14 +6440,14 @@ squares = [x**2 for x in range(5)]  # [0, 1, 4, 9, 16]</code></pre>
         <li>Используются для константных данных</li>
         <li>Создание:
           <pre><code>colors = ("red", "green", "blue")
-point = (10, 20)  # или 10, 20</code></pre>
+    point = (10, 20)  # или 10, 20</code></pre>
         </li>
         <li><strong>Методы</strong>:
           <pre><code># count(x) — количество элементов x
-print(colors.count("red"))  # 1
+    print(colors.count("red"))  # 1
 
-# index(x) — индекс первого вхождения x
-print(colors.index("blue")) # 2</code></pre>
+    # index(x) — индекс первого вхождения x
+    print(colors.index("blue")) # 2</code></pre>
         </li>
         <li><strong>Распаковка</strong>:
           <pre><code>x, y = point  # x=10, y=20</code></pre>
@@ -6460,7 +6460,7 @@ print(colors.index("blue")) # 2</code></pre>
         <li>Ключи — уникальные неизменяемые объекты (str, int, tuple)</li>
         <li>Создание:
           <pre><code>user = {"name": "Alice", "age": 30}
-grades = dict(math=5, physics=4)</code></pre>
+    grades = dict(math=5, physics=4)</code></pre>
         </li>
         <li><strong>Основные методы</strong>:
           <table border="1">
@@ -6498,14 +6498,14 @@ grades = dict(math=5, physics=4)</code></pre>
         </li>
         <li><strong>Примеры</strong>:
           <pre><code># Добавление/изменение элемента
-user["email"] = "alice@mail.com"
+    user["email"] = "alice@mail.com"
 
-# Удаление элемента
-del user["age"]
+    # Удаление элемента
+    del user["age"]
 
-# Перебор элементов
-for key, value in user.items():
-    print(f"{key}: {value}")</code></pre>
+    # Перебор элементов
+    for key, value in user.items():
+        print(f"{key}: {value}")</code></pre>
         </li>
       </ul>
 
@@ -6545,19 +6545,19 @@ for key, value in user.items():
 
       <h4>Вложенные структуры</h4>
       <pre><code># Список словарей
-users = [
-    {"name": "Alice", "age": 25},
-    {"name": "Bob", "age": 30}
-]
+    users = [
+        {"name": "Alice", "age": 25},
+        {"name": "Bob", "age": 30}
+    ]
 
-# Кортеж списков
-matrix = ([1, 2, 3], [4, 5, 6])
+    # Кортеж списков
+    matrix = ([1, 2, 3], [4, 5, 6])
 
-# Словарь списков
-data = {
-    "names": ["John", "Emma"],
-    "scores": [85, 92]
-}</code></pre>
+    # Словарь списков
+    data = {
+        "names": ["John", "Emma"],
+        "scores": [85, 92]
+    }</code></pre>
     </div>
   </details>
 
@@ -6598,8 +6598,8 @@ data = {
         </li>
         <li><strong>Использование</strong>:
           <pre><code>numbers = [5, 2, 8]
-print(len(numbers))  # 3
-print(max(numbers))  # 8</code></pre>
+    print(len(numbers))  # 3
+    print(max(numbers))  # 8</code></pre>
         </li>
       </ul>
 
@@ -6608,16 +6608,16 @@ print(max(numbers))  # 8</code></pre>
         <li>Создаются разработчиком с помощью <code>def</code></li>
         <li><strong>Синтаксис</strong>:
           <pre><code>def имя_функции(параметры):
-    """docstring (описание)"""
-    # тело функции
-    return результат</code></pre>
+        """docstring (описание)"""
+        # тело функции
+        return результат</code></pre>
         </li>
         <li><strong>Пример</strong>:
           <pre><code>def calculate_area(radius):
-    """Вычисляет площадь круга"""
-    return 3.14 * radius ** 2
+        """Вычисляет площадь круга"""
+        return 3.14 * radius ** 2
 
-print(calculate_area(3))  # 28.26</code></pre>
+    print(calculate_area(3))  # 28.26</code></pre>
         </li>
       </ul>
 
@@ -6629,7 +6629,7 @@ print(calculate_area(3))  # 28.26</code></pre>
             <li>Значения по умолчанию: <code>def greet(name="Гость")</code></li>
             <li>Произвольное количество аргументов:
               <pre><code>def sum_all(*args):
-    return sum(args)</code></pre>
+        return sum(args)</code></pre>
             </li>
           </ul>
         </li>
@@ -6641,7 +6641,7 @@ print(calculate_area(3))  # 28.26</code></pre>
         </li>
         <li><strong>Лямбда-функции</strong>:
           <pre><code>multiply = lambda a, b: a * b
-print(multiply(3, 4))  # 12</code></pre>
+    print(multiply(3, 4))  # 12</code></pre>
         </li>
         <li><strong>Область видимости</strong>:
           <ul>
@@ -6682,16 +6682,16 @@ print(multiply(3, 4))  # 12</code></pre>
         <li>Разделяйте функции по ответственности</li>
         <li>Пример документации:
           <pre><code>def add(a, b):
-    """Складывает два числа и возвращает результат.
-    
-    Args:
-        a (int/float): Первое число
-        b (int/float): Второе число
+        """Складывает два числа и возвращает результат.
         
-    Returns:
-        int/float: Сумма a и b
-    """
-    return a + b</code></pre>
+        Args:
+            a (int/float): Первое число
+            b (int/float): Второе число
+            
+        Returns:
+            int/float: Сумма a и b
+        """
+        return a + b</code></pre>
         </li>
       </ul>
     </div>
@@ -6774,27 +6774,27 @@ print(multiply(3, 4))  # 12</code></pre>
         <div>
           <h5>Форматирование</h5>
           <pre><code># f-strings (Python 3.6+)
-name = "Alice"
-print(f"Hello, {name}!")</code></pre>
+    name = "Alice"
+    print(f"Hello, {name}!")</code></pre>
 
           <pre><code># format()
-"{} + {} = {}".format(2, 3, 5)</code></pre>
+    "{} + {} = {}".format(2, 3, 5)</code></pre>
         </div>
       </div>
 
       <h4>3. Полезные методы</h4>
       <pre><code># Разделение и соединение
-"a,b,c".split(",") → ["a", "b", "c"]
-"-".join(["1", "2"]) → "1-2"
+    "a,b,c".split(",") → ["a", "b", "c"]
+    "-".join(["1", "2"]) → "1-2"
 
-# Удаление пробелов
-"  text  ".strip() → "text"
+    # Удаление пробелов
+    "  text  ".strip() → "text"
 
-# Проверка вхождения
-if "ell" in "Hello": ...
+    # Проверка вхождения
+    if "ell" in "Hello": ...
 
-# Кодировка
-"Привет".encode("utf-8") → b'\xd0\x9f...'</code></pre>
+    # Кодировка
+    "Привет".encode("utf-8") → b'\xd0\x9f...'</code></pre>
 
       <h4>4. Спецсимволы</h4>
       <ul>
@@ -6806,8 +6806,8 @@ if "ell" in "Hello": ...
 
       <h4>5. Примеры преобразований</h4>
       <pre><code>text = "  Python Is Awesome!  "
-print(text.strip().lower())  # "python is awesome!"
-print(text.replace("Awesome", "Great").upper())  # "  PYTHON IS GREAT!  "</code></pre>
+    print(text.strip().lower())  # "python is awesome!"
+    print(text.replace("Awesome", "Great").upper())  # "  PYTHON IS GREAT!  "</code></pre>
     </div>
   </details>
 
@@ -6825,13 +6825,13 @@ print(text.replace("Awesome", "Great").upper())  # "  PYTHON IS GREAT!  "</code>
         </li>
         <li><strong>Примеры</strong>:
           <pre><code># Квадраты чисел
-squares = [x**2 for x in range(5)]  # [0, 1, 4, 9, 16]
+    squares = [x**2 for x in range(5)]  # [0, 1, 4, 9, 16]
 
-# Фильтрация
-even = [x for x in range(10) if x % 2 == 0]  # [0, 2, 4, 6, 8]
+    # Фильтрация
+    even = [x for x in range(10) if x % 2 == 0]  # [0, 2, 4, 6, 8]
 
-# Вложенные циклы
-pairs = [(x, y) for x in [1,2] for y in [3,4]]  # [(1,3), (1,4), (2,3), (2,4)]</code></pre>
+    # Вложенные циклы
+    pairs = [(x, y) for x in [1,2] for y in [3,4]]  # [(1,3), (1,4), (2,3), (2,4)]</code></pre>
         </li>
       </ul>
 
@@ -6842,14 +6842,14 @@ pairs = [(x, y) for x in [1,2] for y in [3,4]]  # [(1,3), (1,4), (2,3), (2,4)]</
         </li>
         <li><strong>Примеры</strong>:
           <pre><code># Ключ-значение с кубом
-cubes = {x: x**3 for x in range(3)}  # {0:0, 1:1, 2:8}
+    cubes = {x: x**3 for x in range(3)}  # {0:0, 1:1, 2:8}
 
-# Фильтрация по ключу
-filtered = {k: v for k, v in [('a',1), ('b',2)] if k != 'a'}  # {'b': 2}
+    # Фильтрация по ключу
+    filtered = {k: v for k, v in [('a',1), ('b',2)] if k != 'a'}  # {'b': 2}
 
-# Переворот словаря
-original = {'a': 1, 'b': 2}
-reversed = {v: k for k, v in original.items()}  # {1: 'a', 2: 'b'}</code></pre>
+    # Переворот словаря
+    original = {'a': 1, 'b': 2}
+    reversed = {v: k for k, v in original.items()}  # {1: 'a', 2: 'b'}</code></pre>
         </li>
       </ul>
 
@@ -6865,8 +6865,8 @@ reversed = {v: k for k, v in original.items()}  # {1: 'a', 2: 'b'}</code></pre>
           </td>
           <td>
             <pre><code>result = []
-for x in data:
-    result.append(x*2)</code></pre>
+    for x in data:
+        result.append(x*2)</code></pre>
           </td>
         </tr>
         <tr>
@@ -6894,12 +6894,12 @@ for x in data:
 
       <h4>6. Практические примеры</h4>
       <pre><code># Транспонирование матрицы
-matrix = [[1, 2], [3, 4]]
-transposed = [[row[i] for row in matrix] for i in range(2)]  # [[1,3], [2,4]]
+    matrix = [[1, 2], [3, 4]]
+    transposed = [[row[i] for row in matrix] for i in range(2)]  # [[1,3], [2,4]]
 
-# Подсчет частоты символов
-text = "abracadabra"
-count = {char: text.count(char) for char in set(text)}  # {'a':5, 'b':2, ...}</code></pre>
+    # Подсчет частоты символов
+    text = "abracadabra"
+    count = {char: text.count(char) for char in set(text)}  # {'a':5, 'b':2, ...}</code></pre>
     </div>
   </details>
 
@@ -6943,10 +6943,10 @@ count = {char: text.count(char) for char in set(text)}  # {'a':5, 'b':2, ...}</c
         </li>
         <li><strong>Пример шаблона</strong>:
           <pre><code>pattern = r'(\d{3})-(\d{2})'
-text = "Номер: 123-45"
-match = re.search(pattern, text)
-if match:
-    print(match.group(1))  # "123"</code></pre>
+    text = "Номер: 123-45"
+    match = re.search(pattern, text)
+    if match:
+        print(match.group(1))  # "123"</code></pre>
         </li>
         <li><strong>Флаги</strong>:
           <code>re.IGNORECASE</code>, <code>re.MULTILINE</code>, <code>re.DOTALL</code>
@@ -6986,7 +6986,7 @@ if match:
         </li>
         <li><strong>os.path</strong> (работа с путями):
           <pre><code>os.path.join('folder', 'file.txt')  # folder/file.txt
-os.path.exists('data.csv')        # Проверка существования</code></pre>
+    os.path.exists('data.csv')        # Проверка существования</code></pre>
         </li>
         <li><strong>Переменные окружения</strong>:
           <pre><code>print(os.environ['PATH'])</code></pre>
@@ -6995,13 +6995,13 @@ os.path.exists('data.csv')        # Проверка существования<
 
       <h4>3. Импорт модулей</h4>
       <pre><code># Полный импорт
-import re
+    import re
 
-# Импорт с псевдонимом
-import os as operating_system
+    # Импорт с псевдонимом
+    import os as operating_system
 
-# Импорт отдельных функций
-from os import listdir</code></pre>
+    # Импорт отдельных функций
+    from os import listdir</code></pre>
 
       <h4>4. Важные замечания</h4>
       <ul>
@@ -7023,19 +7023,19 @@ from os import listdir</code></pre>
 
       <h4>Создание и использование</h4>
       <pre><code># mymodule.py
-def greet(name):
-    return f"Hello, {name}!"
+    def greet(name):
+        return f"Hello, {name}!"
 
-# main.py
-import mymodule
-print(mymodule.greet("Alice"))  # Hello, Alice!</code></pre>
+    # main.py
+    import mymodule
+    print(mymodule.greet("Alice"))  # Hello, Alice!</code></pre>
 
       <h4>Особенности:</h4>
       <ul>
         <li>Имя модуля = имя файла (без <code>.py</code>)</li>
         <li>Специальная переменная <code>__name__</code>:
           <pre><code>if __name__ == "__main__":
-    print("Запуск как скрипт")</code></pre>
+        print("Запуск как скрипт")</code></pre>
         </li>
       </ul>
 
@@ -7068,13 +7068,13 @@ print(mymodule.greet("Alice"))  # Hello, Alice!</code></pre>
 
       <h4>Примеры</h4>
       <pre><code># Чтение файла
-with open('data.txt', 'r', encoding='utf-8') as f:
-    content = f.read()
+    with open('data.txt', 'r', encoding='utf-8') as f:
+        content = f.read()
 
-# Запись в файл
-lines = ["Line 1\n", "Line 2\n"]
-with open('output.txt', 'w') as f:
-    f.writelines(lines)</code></pre>
+    # Запись в файл
+    lines = ["Line 1\n", "Line 2\n"]
+    with open('output.txt', 'w') as f:
+        f.writelines(lines)</code></pre>
 
       <h3>3. Контекстный менеджер <code>with</code></h3>
       <p>Автоматическое управление ресурсами (закрытие файла, даже при ошибках).</p>
@@ -7088,14 +7088,14 @@ with open('output.txt', 'w') as f:
         <tr>
           <td>
             <pre><code>f = open('file.txt')
-try:
-    data = f.read()
-finally:
-    f.close()</code></pre>
+    try:
+        data = f.read()
+    finally:
+        f.close()</code></pre>
           </td>
           <td>
             <pre><code>with open('file.txt') as f:
-    data = f.read()</code></pre>
+        data = f.read()</code></pre>
           </td>
         </tr>
       </table>
@@ -7109,10 +7109,10 @@ finally:
 
       <h4>Пример с обработкой ошибок</h4>
       <pre><code>try:
-    with open('missing.txt') as f:
-        print(f.read())
-except FileNotFoundError:
-    print("Файл не найден!")</code></pre>
+        with open('missing.txt') as f:
+            print(f.read())
+    except FileNotFoundError:
+        print("Файл не найден!")</code></pre>
     </div>
   </details>
 
@@ -7122,14 +7122,15 @@ except FileNotFoundError:
     <div class="details__content">
       <h3>Библиотека Pandas</h3>
       <p>Библиотека для анализа и обработки данных. Основные структуры: <code>DataFrame</code> (таблицы) и
-        <code>Series</code> (одномерные массивы).</p>
+        <code>Series</code> (одномерные массивы).
+      </p>
 
       <h4>1. Создание DataFrame</h4>
       <pre><code>import pandas as pd
 
-# Из словаря
-data = {'Имя': ['Анна', 'Борис'], 'Возраст': [25, 30]}
-df = pd.DataFrame(data)</code></pre>
+    # Из словаря
+    data = {'Имя': ['Анна', 'Борис'], 'Возраст': [25, 30]}
+    df = pd.DataFrame(data)</code></pre>
 
       <h4>2. Загрузка данных</h4>
       <table>
@@ -7170,19 +7171,19 @@ df = pd.DataFrame(data)</code></pre>
         <div>
           <h5>Фильтрация</h5>
           <pre><code># Выбор колонки
-df['Имя']
+    df['Имя']
 
-# Фильтр по условию
-df[df['Возраст'] > 25]</code></pre>
+    # Фильтр по условию
+    df[df['Возраст'] > 25]</code></pre>
         </div>
       </div>
 
       <h4>4. Группировка и агрегация</h4>
       <pre><code># Группировка по колонке
-df.groupby('Город')['Продажи'].sum()
+    df.groupby('Город')['Продажи'].sum()
 
-# Агрегатные функции
-df.agg({'Цена': ['mean', 'max']})</code></pre>
+    # Агрегатные функции
+    df.agg({'Цена': ['mean', 'max']})</code></pre>
 
       <h4>5. Обработка пропусков</h4>
       <table>
@@ -7206,13 +7207,13 @@ df.agg({'Цена': ['mean', 'max']})</code></pre>
 
       <h4>6. Пример анализа данных</h4>
       <pre><code># Загрузка данных
-df = pd.read_csv('sales.csv')
+    df = pd.read_csv('sales.csv')
 
-# Топ-5 самых дорогих товаров
-top_products = df.sort_values('Цена', ascending=False).head(5)
+    # Топ-5 самых дорогих товаров
+    top_products = df.sort_values('Цена', ascending=False).head(5)
 
-# Средняя цена по категориям
-avg_price = df.groupby('Категория')['Цена'].mean()</code></pre>
+    # Средняя цена по категориям
+    avg_price = df.groupby('Категория')['Цена'].mean()</code></pre>
 
       <h4>7. Преимущества Pandas</h4>
       <ul>
@@ -7232,7 +7233,8 @@ avg_price = df.groupby('Категория')['Цена'].mean()</code></pre>
     <div class="details__content">
       <h3>Роли в ChatGPT и их влияние на ответы</h3>
       <p>ChatGPT использует роли для управления контекстом диалога. Основные роли: <code>system</code>,
-        <code>user</code>, <code>assistant</code>.</p>
+        <code>user</code>, <code>assistant</code>.
+      </p>
 
       <h4>1. Типы ролей</h4>
       <table>
@@ -7282,13 +7284,13 @@ avg_price = df.groupby('Категория')['Цена'].mean()</code></pre>
 
       <h4>3. Примеры использования</h4>
       <pre><code># Без system-роли
-Пользователь: "Напиши код нейросети"
-Ответ: Общий пример на Python
+    Пользователь: "Напиши код нейросети"
+    Ответ: Общий пример на Python
 
-# С system-ролью
-System: "Ты senior Python-разработчик"
-Пользователь: "Напиши код нейросети"
-Ответ: Профессиональный код с комментариями и best practices</code></pre>
+    # С system-ролью
+    System: "Ты senior Python-разработчик"
+    Пользователь: "Напиши код нейросети"
+    Ответ: Профессиональный код с комментариями и best practices</code></pre>
 
       <h4>4. Лучшие практики</h4>
       <ul>
@@ -7403,13 +7405,13 @@ System: "Ты senior Python-разработчик"
 
       <h4>5. Примеры промптов для разных моделей</h4>
       <pre><code># Для GPT-4 (анализ данных)
-"Проанализируй CSV-файл с продажами. Найди 3 ключевые тенденции. Ответ оформь как markdown-отчёт."
+    "Проанализируй CSV-файл с продажами. Найди 3 ключевые тенденции. Ответ оформь как markdown-отчёт."
 
-# Для Code Interpreter
-"Реши уравнение: x² + 5x - 14 = 0. Покажи шаги решения на Python."
+    # Для Code Interpreter
+    "Реши уравнение: x² + 5x - 14 = 0. Покажи шаги решения на Python."
 
-# Для Web Browsing
-"Какие последние новости о SpaceX? Источники: только официальный сайт и NASA."</code></pre>
+    # Для Web Browsing
+    "Какие последние новости о SpaceX? Источники: только официальный сайт и NASA."</code></pre>
     </div>
   </details>
 
@@ -7417,7 +7419,97 @@ System: "Ты senior Python-разработчик"
   <details class="details">
     <summary class="details__title">Сплитеры и их отличия.</summary>
     <div class="details__content">
-      <p>...</p>
+      <h3>Сплитеры (разделители) в ChatGPT и их роль</h3>
+      <p>Сплитеры — инструменты для структурирования промптов, разделения контекста или данных. Используются для
+        улучшения понимания модели и управления ответами.</p>
+
+      <h4>1. Типы сплитеров</h4>
+      <table>
+        <tr>
+          <th>Тип</th>
+          <th>Назначение</th>
+          <th>Пример</th>
+        </tr>
+        <tr>
+          <td><strong>Текстовые разделители</strong></td>
+          <td>Визуальное разделение блоков</td>
+          <td><code>---</code>, <code>###</code>, <code>***</code></td>
+        </tr>
+        <tr>
+          <td><strong>Семантические сплитеры</strong></td>
+          <td>Разделение по смыслу (вопрос/контекст)</td>
+          <td><code>"Контекст: ... Вопрос: ..."</code></td>
+        </tr>
+        <tr>
+          <td><strong>Токенизационные</strong></td>
+          <td>Разбивка на части по длине токенов</td>
+          <td>Разделение текста на чанки по 512 токенов</td>
+        </tr>
+        <tr>
+          <td><strong>Структурные</strong></td>
+          <td>Форматирование (JSON, XML)</td>
+          <td><code>&lt;data&gt;...&lt;/data&gt;</code></td>
+        </tr>
+      </table>
+
+      <h4>2. Ключевые отличия</h4>
+      <div class="comparison">
+        <div>
+          <h5>По назначению</h5>
+          <ul>
+            <li><strong>Текстовые</strong>: Упрощение чтения промпта</li>
+            <li><strong>Семантические</strong>: Явное разделение ролей (задача vs данные)</li>
+            <li><strong>Токенизационные</strong>: Обход ограничений длины контекста</li>
+          </ul>
+        </div>
+        <div>
+          <h5>По формату</h5>
+          <ul>
+            <li><strong>Символьные</strong>: <code>---</code>, <code>"""</code></li>
+            <li><strong>Теговые</strong>: <code>[CONTEXT] ... [/CONTEXT]</code></li>
+            <li><strong>JSON/XML</strong>: Машиночитаемое структурирование</li>
+          </ul>
+        </div>
+      </div>
+
+      <h4>3. Примеры использования</h4>
+      <pre><code># Текстовый сплитер
+    """
+    Инструкция: Напиши email-письмо.
+    ---
+    Тема: Подтверждение заказа
+    Тон: Официальный
+    Детали: Заказ №1234 принят
+    ---
+    """
+
+    # Семантический сплитер
+    [ЗАДАЧА] Переведи текст на французский. 
+    [ТЕКСТ] "Привет, как дела?" 
+    [/ТЕКСТ]
+
+    # JSON-сплитер
+    {
+      "запрос": "анализ отзыва",
+      "данные": "Отличный товар! Быстрая доставка."
+    }</code></pre>
+
+      <h4>4. Лучшие практики</h4>
+      <ul>
+        <li>Используйте уникальные разделители, чтобы избежать конфликтов с текстом</li>
+        <li>Для длинных данных применяйте токенизационные сплитеры (чанки по 500-1000 токенов)</li>
+        <li>В сложных промптах комбинируйте типы:
+          <code>---</code> для секций, <code>```</code> для кода
+        </li>
+        <li>Тестируйте сплитеры — иногда модель игнорирует неочевидные разделители</li>
+      </ul>
+
+      <h4>5. Ограничения</h4>
+      <ul>
+        <li>Сплитеры не гарантируют точное разделение контекста</li>
+        <li>Модель может "потерять" часть данных между разделами</li>
+        <li>Слишком частые разделители ухудшают читаемость промпта</li>
+      </ul>
     </div>
   </details>
 
@@ -7425,11 +7517,64 @@ System: "Ты senior Python-разработчик"
   <details class="details">
     <summary class="details__title">База знаний. Источники базы знаний.</summary>
     <div class="details__content">
-      <p>Сегментация изображений — это важная задача в области компьютерного зрения, где цель заключается в разделении
-        изображения на несколько значимых сегментов, таких как объекты или области. Сегментация широко применяется в
-        медицине, автономных системах, робототехнике и многих других областях. В последние годы, благодаря достижениям в
-        области глубокого обучения, появились эффективные архитектуры нейронных сетей, которые могут решать задачи
-        сегментации с высокой точностью.</p>
+      <h3>База знаний ChatGPT и источники данных</h3>
+      <p>ChatGPT обучается на обширных текстовых данных, которые формируют его «базу знаний». Вот ключевые аспекты:</p>
+
+      <h4>1. Основные источники данных</h4>
+      <table>
+        <tr><th>Тип данных</th><th>Примеры</th><th>Доля</th></tr>
+        <tr><td>Книги</td><td>Проект Гутенберг, научная литература</td><td>~15%</td></tr>
+        <tr><td>Веб-страницы</td><td>Wikipedia, новостные сайты, блоги</td><td>~60%</td></tr>
+        <tr><td>Научные статьи</td><td>arXiv, PubMed</td><td>~5%</td></tr>
+        <tr><td>Соцсети и форумы</td><td>Reddit, Twitter (ограниченно)</td><td>~10%</td></tr>
+        <tr><td>Код</td><td>GitHub (публичные репозитории)</td><td>~5%</td></tr>
+      </table>
+
+      <h4>2. Обработка данных</h4>
+      <ul>
+        <li><strong>Фильтрация</strong>: Удаление спама, контента для взрослых, персональных данных</li>
+        <li><strong>Токенизация</strong>: Разбивка текста на части (токены) для анализа</li>
+        <li><strong>Дедупликация</strong>: Исключение повторяющегося контента</li>
+      </ul>
+
+      <h4>3. Временные рамки</h4>
+      <ul>
+        <li><strong>GPT-3.5</strong>: Данные до октября 2021</li>
+        <li><strong>GPT-4</strong>: Данные до апреля 2023 (в некоторых версиях)</li>
+        <li><strong>Web Browsing</strong>: Доступ к актуальным данным через поиск в интернете</li>
+      </ul>
+
+      <h4>4. Ограничения</h4>
+      <div class="warning">
+        <ul>
+          <li>❌ Нет доступа к закрытым базам (например, платные научные журналы)</li>
+          <li>❌ Не обучается на личных диалогах пользователей</li>
+          <li>❌ Может содержать устаревшую информацию</li>
+        </ul>
+      </div>
+
+      <h4>5. Как источники влияют на ответы?</h4>
+      <pre><code># Пример 1: Вопрос по истории
+Ввод: "Кто открыл Америку?"
+Источники: Учебники истории, Wikipedia → Ответ: "Христофор Колумб в 1492 году"
+
+# Пример 2: Технический вопрос
+Ввод: "Как реализовать нейросеть на Python?"
+Источники: GitHub-репозитории, Stack Overflow → Пример кода с использованием TensorFlow</code></pre>
+
+      <h4>6. Статичность базы знаний</h4>
+      <ul>
+        <li>Модель не обновляет знания после обучения</li>
+        <li>Актуальность информации зависит от даты обучения модели</li>
+        <li>Для работы с новыми данными используйте <code>Web Browsing</code> или RAG-подходы</li>
+      </ul>
+
+      <h4>7. Этические аспекты</h4>
+      <ul>
+        <li>Данные анонимизированы (удалены имена, email и т.д.)</li>
+        <li>Исключены материалы, нарушающие авторские права</li>
+        <li>Контент фильтруется по принципам безопасности OpenAI</li>
+      </ul>
     </div>
   </details>
 
@@ -7437,11 +7582,97 @@ System: "Ты senior Python-разработчик"
   <details class="details">
     <summary class="details__title">Обработка информации из различных источников.</summary>
     <div class="details__content">
-      <p>Сегментация изображений — это важная задача в области компьютерного зрения, где цель заключается в разделении
-        изображения на несколько значимых сегментов, таких как объекты или области. Сегментация широко применяется в
-        медицине, автономных системах, робототехнике и многих других областях. В последние годы, благодаря достижениям в
-        области глубокого обучения, появились эффективные архитектуры нейронных сетей, которые могут решать задачи
-        сегментации с высокой точностью.</p>
+      <h3>Как ChatGPT обрабатывает информацию из разных источников</h3>
+      <p>Модель интегрирует данные из миллионов источников, применяя сложные алгоритмы анализа. Основные этапы:</p>
+
+      <h4>1. Этапы обработки</h4>
+      <div class="processing-steps">
+        <div class="step">
+          <h5>Сбор данных</h5>
+          <ul>
+            <li>Веб-краулинг (Common Crawl)</li>
+            <li>Публичные датасеты (BooksCorpus, Wikipedia)</li>
+            <li>Лицензионный контент (партнерские соглашения)</li>
+          </ul>
+        </div>
+        
+        <div class="step">
+          <h5>Предобработка</h5>
+          <ul>
+            <li>Удаление HTML-тегов</li>
+            <li>Нормализация текста (исправление кодировок)</li>
+            <li>Фильтрация токсичного контента</li>
+          </ul>
+        </div>
+
+        <div class="step">
+          <h5>Семантический анализ</h5>
+          <ul>
+            <li>Распознавание контекста</li>
+            <li>Выявление паттернов</li>
+            <li>Построение векторных представлений</li>
+          </ul>
+        </div>
+      </div>
+
+      <h4>2. Методы интеграции данных</h4>
+      <table>
+        <tr><th>Источник</th><th>Особенности обработки</th><th>Пример влияния</th></tr>
+        <tr>
+          <td>Научные статьи</td>
+          <td>Акцент на термины и цитаты</td>
+          <td>Точные ответы по STEM-дисциплинам</td>
+        </tr>
+        <tr>
+          <td>Соцсети</td>
+          <td>Анализ сленга и мемов</td>
+          <td>Понимание разговорной речи</td>
+        </tr>
+        <tr>
+          <td>Код</td>
+          <td>Синтаксический разбор</td>
+          <td>Генерация рабочего кода</td>
+        </tr>
+      </table>
+
+      <h4>3. Конфликт источников</h4>
+      <pre><code># Пример: разные данные о населении страны
+Источник 1: "Население Канады — 38 млн (2021)"
+Источник 2: "Население Канады — 40 млн (2023)"
+
+→ Модель выберет наиболее частотный вариант 
+или укажет: "около 38-40 млн"</code></pre>
+
+      <h4>4. Техники улучшения обработки</h4>
+      <ul>
+        <li><strong>RAG (Retrieval-Augmented Generation)</strong>: 
+          <br>Доступ к внешним базам данных в реальном времени</li>
+        <li><strong>Active Learning</strong>: 
+          <br>Приоритетное обучение на спорных/противоречивых примерах</li>
+        <li><strong>Cross-validation</strong>: 
+          <br>Сравнение данных из разных доменов (наука vs блоги)</li>
+      </ul>
+
+      <h4>5. Практические советы для промптов</h4>
+      <div class="tips">
+        <div class="tip">
+          <h5>✅ Правильно</h5>
+          <pre><code>"Сравни мнения из медицинских журналов 
+и форумов о пользе кофе"</code></pre>
+        </div>
+        <div class="tip">
+          <h5>❌ Неправильно</h5>
+          <pre><code>"Сколько весит Земля?" 
+(без указания источников)</code></pre>
+        </div>
+      </div>
+
+      <h4>6. Ограничения</h4>
+      <ul>
+        <li>Не различает авторитетность источников (медицинский журнал vs блог)</li>
+        <li>Склонна к "усреднению" противоречивых данных</li>
+        <li>Может смешивать стили (научный + разговорный)</li>
+      </ul>
     </div>
   </details>
 
@@ -7449,11 +7680,96 @@ System: "Ты senior Python-разработчик"
   <details class="details">
     <summary class="details__title">Создание диалога. Саммаризация.</summary>
     <div class="details__content">
-      <p>Сегментация изображений — это важная задача в области компьютерного зрения, где цель заключается в разделении
-        изображения на несколько значимых сегментов, таких как объекты или области. Сегментация широко применяется в
-        медицине, автономных системах, робототехнике и многих других областях. В последние годы, благодаря достижениям в
-        области глубокого обучения, появились эффективные архитектуры нейронных сетей, которые могут решать задачи
-        сегментации с высокой точностью.</p>
+      <h3>Создание диалога и саммаризация в ChatGPT</h3>
+      <p>Эффективное взаимодействие с моделью требует управления контекстом и сжатия информации.</p>
+
+      <h4>1. Создание диалога</h4>
+      <div class="methods-grid">
+        <div>
+          <h5>Принципы диалога</h5>
+          <ul>
+            <li><strong>Контекстная цепочка</strong>: Сохраняйте историю через <code>assistant</code>-роли</li>
+            <li><strong>Постепенное уточнение</strong>: Разбивайте сложные задачи на шаги</li>
+            <li><strong>Пример промпта</strong>:
+              <pre><code>User: "Объясни квантовую физику"
+Assistant: "Квантовая физика изучает..."
+User: "Упрости это объяснение для ребенка"</code></pre>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h5>Структура диалога</h5>
+          <pre><code>[
+  {"role":"system", "content":"Ты учитель физики"},
+  {"role":"user", "content":"Что такое фотон?"},
+  {"role":"assistant", "content":"Частица света..."},
+  {"role":"user", "content":"А как это связано с лазерами?"}
+]</code></pre>
+        </div>
+      </div>
+
+      <h4>2. Саммаризация</h4>
+      <table>
+        <tr><th>Тип</th><th>Промпт-пример</th><th>Результат</th></tr>
+        <tr>
+          <td>Общая</td>
+          <td><code>"Кратко суммируй текст ниже в 3 пункта:"</code></td>
+          <td>Маркированный список ключевых идей</td>
+        </tr>
+        <tr>
+          <td>Тематическая</td>
+          <td><code>"Выдели только информацию о биткоине из статьи"</code></td>
+          <td>Таргетированная выжимка</td>
+        </tr>
+        <tr>
+          <td>Адаптивная</td>
+          <td><code>"Объясни как для 10-летнего: {текст}"</code></td>
+          <td>Упрощенное изложение</td>
+        </tr>
+      </table>
+
+      <h4>3. Техники саммаризации</h4>
+      <div class="techniques">
+        <div>
+          <h5>Extractive</h5>
+          <ul>
+            <li>Выделение ключевых фраз</li>
+            <li>Пример: <code>"Найди 5 главных тезисов"</code></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h5>Abstractive</h5>
+          <ul>
+            <li>Переформулирование содержания</li>
+            <li>Пример: <code>"Перескажи своими словами"</code></li>
+          </ul>
+        </div>
+      </div>
+
+      <h4>4. Лучшие практики</h4>
+      <pre><code># Четкие инструкции
+"Суммируй статью в 100 словах. Формат: 1) Проблема 2) Решение 3) Итог"
+
+# Работа с длинными текстами
+"Раздели текст на разделы ###. Суммируй каждый отдельно"
+
+# Контроль качества
+"Сравни исходный текст и саммари. Не потерялась ли главная идея?"</code></pre>
+
+      <h4>5. Ограничения</h4>
+      <ul>
+        <li>Может пропускать нюансы при сильном сжатии</li>
+        <li>Склонность к "галлюцинациям" в абстрактных саммари</li>
+        <li>Максимальная длина контекста: 12k токенов (GPT-4)</li>
+      </ul>
+
+      <h4>6. Пример цепочки</h4>
+      <pre><code>Пользователь: "Суммируй исследование о глобальном потеплении"
+ChatGPT: "1) Температура растет на 0.2°C/год... 2) Основная причина..."
+Пользователь: "Сделай это короче для твита"
+ChatGPT: "Глобальное потепление ускоряется: +0.2°C/год. Главные причины..."</code></pre>
     </div>
   </details>
 
@@ -7461,11 +7777,91 @@ System: "Ты senior Python-разработчик"
   <details class="details">
     <summary class="details__title">Использование нескольких моделей ChatGPT.</summary>
     <div class="details__content">
-      <p>Сегментация изображений — это важная задача в области компьютерного зрения, где цель заключается в разделении
-        изображения на несколько значимых сегментов, таких как объекты или области. Сегментация широко применяется в
-        медицине, автономных системах, робототехнике и многих других областях. В последние годы, благодаря достижениям в
-        области глубокого обучения, появились эффективные архитектуры нейронных сетей, которые могут решать задачи
-        сегментации с высокой точностью.</p>
+      <h3>Совместное использование моделей ChatGPT</h3>
+      <p>Комбинация разных моделей позволяет решать комплексные задачи. Основные подходы:</p>
+
+      <h4>1. Сценарии использования</h4>
+      <table>
+        <tr><th>Стратегия</th><th>Модели</th><th>Пример</th></tr>
+        <tr>
+          <td>Последовательная обработка</td>
+          <td>GPT-4 → DALL-E</td>
+          <td>Генерация текста → создание иллюстраций</td>
+        </tr>
+        <tr>
+          <td>Параллельный анализ</td>
+          <td>GPT-3.5 + GPT-4</td>
+          <td>Сравнение ответов для проверки точности</td>
+        </tr>
+        <tr>
+          <td>Специализация</td>
+          <td>Code Interpreter + Web Browsing</td>
+          <td>Анализ данных + актуальная информация</td>
+        </tr>
+      </table>
+
+      <h4>2. Техники интеграции</h4>
+      <div class="methods-grid">
+        <div>
+          <h5>Chaining (цепочки)</h5>
+          <pre><code># Шаг 1: GPT-4 генерирует SQL-запрос
+prompt1 = "Напиши SQL для выборки клиентов с доходом > 100k"
+
+# Шаг 2: Code Interpreter выполняет запрос
+prompt2 = "Выполни этот SQL на приложенном CSV: {sql}"</code></pre>
+        </div>
+
+        <div>
+          <h5>Ensemble (ансамбли)</h5>
+          <pre><code># Параллельный опрос 3 моделей
+models = [gpt3, gpt4, claude]
+answers = [model.generate(prompt) for model in models]
+final_answer = vote_best(answers)</code></pre>
+        </div>
+      </div>
+
+      <h4>3. Практические примеры</h4>
+      <div class="examples">
+        <div class="example">
+          <h5>Мультимодальный пайплайн</h5>
+          <pre><code>1. Web Browsing: Сбор данных о погоде
+2. GPT-4: Анализ тенденций
+3. DALL-E: Визуализация графиков</code></pre>
+        </div>
+
+        <div class="example">
+          <h5>Оптимизация стоимости</h5>
+          <pre><code>1. GPT-3.5: Предварительная обработка запроса
+2. GPT-4: Только для сложных кейсов</code></pre>
+        </div>
+      </div>
+
+      <h4>4. Лучшие практики</h4>
+      <ul>
+        <li>Используйте GPT-4 для критически важных задач (медицина, юриспруденция)</li>
+        <li>Применяйте GPT-3.5 для рутинных операций (препроцессинг, классификация)</li>
+        <li>Комбинируйте языковые модели со специальными (Whisper для аудио, Stable Diffusion для изображений)</li>
+        <li>Используйте роутер для автоматического выбора модели:
+          <pre><code>if "нарисуй" in prompt: use DALL-E
+elif "код" in prompt: use Code Interpreter</code></pre>
+        </li>
+      </ul>
+
+      <h4>5. Ограничения</h4>
+      <div class="warning">
+        <ul>
+          <li>⚠️ Увеличение времени ответа в цепочках</li>
+          <li>⚠️ Накопление ошибок между этапами</li>
+          <li>⚠️ Высокая стоимость GPT-4 в массовых операциях</li>
+        </ul>
+      </div>
+
+      <h4>6. Инструменты</h4>
+      <ul>
+        <li><strong>LangChain</strong>: Фреймворк для построения цепочек</li>
+        <li><strong>AutoGPT</strong>: Автоматическое переключение моделей</li>
+        <li><strong>API Routing</strong>: Динамический выбор модели через OpenAI API</li>
+      </ul>
     </div>
   </details>
 
@@ -7473,11 +7869,102 @@ System: "Ты senior Python-разработчик"
   <details class="details">
     <summary class="details__title">Парсинг сайтов. Методы обработки страниц.</summary>
     <div class="details__content">
-      <p>Сегментация изображений — это важная задача в области компьютерного зрения, где цель заключается в разделении
-        изображения на несколько значимых сегментов, таких как объекты или области. Сегментация широко применяется в
-        медицине, автономных системах, робототехнике и многих других областях. В последние годы, благодаря достижениям в
-        области глубокого обучения, появились эффективные архитектуры нейронных сетей, которые могут решать задачи
-        сегментации с высокой точностью.</p>
+      <h3>Парсинг сайтов и методы обработки веб-страниц</h3>
+      <p>Парсинг — автоматизированное извлечение данных с веб-страниц. Основные подходы:</p>
+
+      <h4>1. Основные методы парсинга</h4>
+      <table>
+        <tr><th>Метод</th><th>Инструменты</th><th>Использование</th></tr>
+        <tr>
+          <td>HTML-парсинг</td>
+          <td>Beautiful Soup, lxml</td>
+          <td>Статические сайты без JS</td>
+        </tr>
+        <tr>
+          <td>Headless-браузеры</td>
+          <td>Selenium, Playwright</td>
+          <td>Сайты с динамическим JS-контентом</td>
+        </tr>
+        <tr>
+          <td>API-запросы</td>
+          <td>Requests, Scrapy</td>
+          <td>Когда сайт предоставляет JSON API</td>
+        </tr>
+      </table>
+
+      <h4>2. Этапы обработки страниц</h4>
+      <div class="processing-steps">
+        <div class="step">
+          <h5>1. Получение контента</h5>
+          <pre><code>import requests
+response = requests.get(url)
+html = response.text</code></pre>
+        </div>
+        
+        <div class="step">
+          <h5>2. Парсинг структуры</h5>
+          <pre><code>from bs4 import BeautifulSoup
+soup = BeautifulSoup(html, 'lxml')
+title = soup.find('h1').text</code></pre>
+        </div>
+
+        <div class="step">
+          <h5>3. Очистка данных</h5>
+          <pre><code># Удаление HTML-тегов
+clean_text = soup.get_text()
+
+# Регулярные выражения
+import re
+phones = re.findall(r'\+\d{11}', text)</code></pre>
+        </div>
+      </div>
+
+      <h4>3. Обработка динамического контента</h4>
+      <pre><code>from selenium import webdriver
+
+driver = webdriver.Chrome()
+driver.get(url)
+dynamic_content = driver.find_element_by_class_name('js-widget').text
+driver.quit()</code></pre>
+
+      <h4>4. Обход ограничений</h4>
+      <ul>
+        <li><strong>Задержки</strong>: <code>time.sleep(random.uniform(1,3))</code></li>
+        <li><strong>User-Agent ротация</strong>: Подмена заголовков запросов</li>
+        <li><strong>Прокси</strong>: Использование разных IP-адресов</li>
+        <li><strong>CAPTCHA-обход</strong>: Сервисы вроде 2Captcha</li>
+      </ul>
+
+      <h4>5. Лучшие практики</h4>
+      <div class="tips">
+        <div class="tip">
+          <h5>✅ Правильно</h5>
+          <ul>
+            <li>Проверка <code>robots.txt</code></li>
+            <li>Кэширование скачанных страниц</li>
+            <li>Использование официальных API</li>
+          </ul>
+        </div>
+        <div class="tip">
+          <h5>❌ Неправильно</h5>
+          <ul>
+            <li>100 запросов/секунду</li>
+            <li>Парсинг персональных данных</li>
+            <li>Игнорирование условий использования</li>
+          </ul>
+        </div>
+      </div>
+
+      <h4>6. Парсинг через ChatGPT</h4>
+      <pre><code>Промпт: "Извлеки все email-адреса из текста ниже. Ответ в JSON:
+{текст_страницы}"</code></pre>
+
+      <h4>7. Инструменты для хранения</h4>
+      <ul>
+        <li><strong>CSV/JSON</strong>: Для небольших данных</li>
+        <li><strong>SQLite/PostgreSQL</strong>: Для структурированных данных</li>
+        <li><strong>Elasticsearch</strong>: Для полнотекстового поиска</li>
+      </ul>
     </div>
   </details>
 
@@ -7485,11 +7972,7 @@ System: "Ты senior Python-разработчик"
   <details class="details">
     <summary class="details__title">Система с несколькими базами знаний. Ретриверы.</summary>
     <div class="details__content">
-      <p>Сегментация изображений — это важная задача в области компьютерного зрения, где цель заключается в разделении
-        изображения на несколько значимых сегментов, таких как объекты или области. Сегментация широко применяется в
-        медицине, автономных системах, робототехнике и многих других областях. В последние годы, благодаря достижениям в
-        области глубокого обучения, появились эффективные архитектуры нейронных сетей, которые могут решать задачи
-        сегментации с высокой точностью.</p>
+      <p>...</p>
     </div>
   </details>
 
